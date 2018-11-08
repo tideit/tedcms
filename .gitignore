@@ -29,3 +29,6 @@ phpunit.phar
 /composer.lock
 /tests/
 /common/
+/backend/runtime
+/console/runtime
+/frontend/runtime
