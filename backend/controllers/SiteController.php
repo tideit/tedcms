@@ -64,29 +64,6 @@ class SiteController extends BaseController
 	        die(json_encode($data));
         }
     }
-    public function actionRegist(){
-    	return $this->render('regist');
-    }
-    public function actionDoregist(){
-    	$username = trim($_REQUEST['username']);
-    	$password = trim($_REQUEST['password']);
-    	$email = trim($_REQUEST['email']);
-    	if(empty($username) || empty($password)){
-		    $data = ['status'=>1,'error'=>1,'message'=>'用户名或者密码不能为空'];
-		    die(json_encode($data));
-	    }
-	    $sql = "select count(*) from ".$GLOBALS['ted']->table('users')." where user_name = '".$username."'";
-    	$result = $GLOBALS['db']->getScalar($sql);
-    	if($result>0){
-    		$data = ['status'=>1,'error'=>1,'message'=>'用户名已经存在'];
-    		die(json_encode($data));
-	    }
-	    $ec_salt=rand(1,9999);
-	    $new_possword=md5(md5($password).$ec_salt);
-	    $add_time = TimeHelper::gmtime();
-	    $sql = "insert into ".$GLOBALS['ted']->table('users')." (user_name,password,email,ec_salt,add_time)"." value ('".$username."','".$new_possword."','".$email."','".$ec_salt."','".$add_time."');";
-	    $GLOBALS['db']->query($sql);
-    }
     public function actionLoginout(){
     	$GLOBALS['sess']->destroy_session();
     	$this->redirect('login');

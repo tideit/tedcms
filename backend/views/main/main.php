@@ -12,10 +12,10 @@
 <div class="weadmin-body">
     <blockquote class="layui-elem-quote">欢迎使用</blockquote>
     <div class="layui-col-lg12 layui-collapse" style="border: none;">
-    <div class="layui-col-lg6 layui-col-md12">
-        <fieldset class="layui-elem-field" style="padding: 5px;">
-            <blockquote class="layui-elem-quote font16">信息统计</blockquote>
-            <div class="layui-fluid">
+    <div class="layui-col-lg12 layui-col-md12">
+        <fieldset class="layui-elem-field layui-col-md12" style="padding: 5px;">
+            <blockquote class="layui-elem-quote font16 layui-col-md12">信息统计</blockquote>
+            <div>
 
             </div>
         </fieldset>

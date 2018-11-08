@@ -34,14 +34,125 @@ $this->title = '';
             <li>
                 <a href="javascript:;">
                     <i class="iconfont">&#xe6b8;</i>
-                    <cite>算牌管理</cite>
+                    <cite>系统设置</cite>
                     <i class="iconfont nav_right">&#xe697;</i>
                 </a>
                 <ul class="sub-menu">
                     <li>
-                        <a _href="./main/results">
+                        <a _href="./vote/main">
                             <i class="iconfont">&#xe6a7;</i>
-                            <cite>结果列表</cite>
+                            <cite>投票管理</cite>
+                        </a>
+                    </li>
+                    <li>
+                        <a _href="./vote/main">
+                            <i class="iconfont">&#xe6a7;</i>
+                            <cite>系统基本参数</cite>
+                        </a>
+                    </li>
+                    <li>
+                        <a _href="./vote/main">
+                            <i class="iconfont">&#xe6a7;</i>
+                            <cite>系统用户管理</cite>
+                        </a>
+                    </li>
+                    <li>
+                        <a _href="./vote/main">
+                            <i class="iconfont">&#xe6a7;</i>
+                            <cite>用户组设定</cite>
+                        </a>
+                    </li>
+                    <li>
+                        <a _href="./vote/main">
+                            <i class="iconfont">&#xe6a7;</i>
+                            <cite>服务器分布/远程</cite>
+                        </a>
+                    </li>
+                    <li>
+                        <a _href="./vote/main">
+                            <i class="iconfont">&#xe6a7;</i>
+                            <cite>系统日志管理</cite>
+                        </a>
+                    </li>
+                    <li>
+                        <a _href="./vote/main">
+                            <i class="iconfont">&#xe6a7;</i>
+                            <cite>验证安全设置</cite>
+                        </a>
+                    </li>
+                    <li>
+                        <a _href="./vote/main">
+                            <i class="iconfont">&#xe6a7;</i>
+                            <cite>图片水印设置</cite>
+                        </a>
+                    </li>
+                    <li>
+                        <a _href="./vote/main">
+                            <i class="iconfont">&#xe6a7;</i>
+                            <cite>自定义文档属性</cite>
+                        </a>
+                    </li>
+                    <li>
+                        <a _href="./vote/main">
+                            <i class="iconfont">&#xe6a7;</i>
+                            <cite>软件频道设置</cite>
+                        </a>
+                    </li>
+                    <li>
+                        <a _href="./vote/main">
+                            <i class="iconfont">&#xe6a7;</i>
+                            <cite>防采集串混淆</cite>
+                        </a>
+                    </li>
+                    <li>
+                        <a _href="./vote/main">
+                            <i class="iconfont">&#xe6a7;</i>
+                            <cite>随机模板设置</cite>
+                        </a>
+                    </li>
+                    <li>
+                        <a _href="./vote/main">
+                            <i class="iconfont">&#xe6a7;</i>
+                            <cite>计划任务管理</cite>
+                        </a>
+                    </li>
+                    <li>
+                        <a _href="./vote/main">
+                            <i class="iconfont">&#xe6a7;</i>
+                            <cite>数据库备份/还原</cite>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <i class="iconfont">&#xe6b8;</i>
+                    <cite>支付工具</cite>
+                    <i class="iconfont nav_right">&#xe697;</i>
+                </a>
+                <ul class="sub-menu">
+                    <li>
+                        <a _href="./vote/main">
+                            <i class="iconfont">&#xe6a7;</i>
+                            <cite>点卡产品分类</cite>
+                        </a>
+                    </li>
+                    <li>
+                        <a _href="./vote/main">
+                            <i class="iconfont">&#xe6a7;</i>
+                            <cite>点卡产品管理</cite>
+                        </a>
+                    </li>
+                    <li>
+                        <a _href="./vote/main">
+                            <i class="iconfont">&#xe6a7;</i>
+                            <cite>会员产品分类</cite>
+                        </a>
+                    </li>
+                    <li>
+                        <a _href="./vote/main">
+                            <i class="iconfont">&#xe6a7;</i>
+                            <cite>会员消费记录</cite>
                         </a>
                     </li>
                 </ul>
