@@ -8,7 +8,7 @@ $this->title = '';
 <!-- 顶部开始 -->
 <div class="container">
     <div class="logo">
-        <a href="index">WeAdmin v1.0</a>
+        <a href="index">TEDCMS</a>
     </div>
     <div class="left_open">
         <i title="展开左侧栏" class="iconfont">&#xe699;</i>
@@ -19,13 +19,7 @@ $this->title = '';
             <dl class="layui-nav-child">
                 <!-- 二级菜单 -->
                 <dd>
-                    <a onclick="WeAdminShow('个人信息','http://www.baidu.com')">个人信息</a>
-                </dd>
-                <dd>
-                    <a onclick="WeAdminShow('切换帐号','./login.html')">切换帐号</a>
-                </dd>
-                <dd>
-                    <a class="loginout" href="login.html">退出</a>
+                    <a class="loginout" href="site/loginout">退出</a>
                 </dd>
             </dl>
         </li>
@@ -45,7 +39,7 @@ $this->title = '';
                 </a>
                 <ul class="sub-menu">
                     <li>
-                        <a _href="./pages/member/list.html">
+                        <a _href="./main/results">
                             <i class="iconfont">&#xe6a7;</i>
                             <cite>结果列表</cite>
                         </a>
@@ -65,7 +59,7 @@ $this->title = '';
         </ul>
         <div class="layui-tab-content">
             <div class="layui-tab-item layui-show">
-                <iframe src='./pages/welcome.html' frameborder="0" scrolling="yes" class="weIframe"></iframe>
+                <iframe src='../main' frameborder="0" scrolling="yes" class="weIframe"></iframe>
             </div>
         </div>
     </div>

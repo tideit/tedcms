@@ -29,6 +29,9 @@ class SiteController extends BaseController
      */
     public function actionIndex()
     {
+    	if($_SESSION['user_id']==0){
+		    $this->redirect('site/login');
+	    }
 	    $sql = 'select * from '.$GLOBALS['ted']->table('users');
 	    $data['users'] = $GLOBALS['db']->getAll($sql);
         return $this->render('index',$data);
@@ -54,7 +57,7 @@ class SiteController extends BaseController
 	        $data = ['status'=>1,'error'=>0,'message'=>'登录成功'];
 	        ClsMain::set_admin_session($result['user_id'], $username, $result['user_rank'], $result['last_login'],$result['email']);
 	        ClsMain::update_last_login();
-	        echo json_encode($data);
+	        $this->redirect('/');
         }else{
 	        $data = ['status'=>1,'error'=>1,'message'=>'密码错误'];
 	        $_SESSION['login_error_times'] += 1;
@@ -83,5 +86,9 @@ class SiteController extends BaseController
 	    $add_time = TimeHelper::gmtime();
 	    $sql = "insert into ".$GLOBALS['ted']->table('users')." (user_name,password,email,ec_salt,add_time)"." value ('".$username."','".$new_possword."','".$email."','".$ec_salt."','".$add_time."');";
 	    $GLOBALS['db']->query($sql);
+    }
+    public function actionLoginout(){
+    	$GLOBALS['sess']->destroy_session();
+    	$this->redirect('login');
     }
 }
