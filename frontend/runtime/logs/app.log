@@ -8385,3 +8385,1780 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1541659173.242
     'REQUEST_TIME' => 1541659173
 ]
+2018-11-08 14:43:40 [127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2018-11-08 14:43:40 [127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: gii
+2018-11-08 14:43:40 [127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\gii\Module::bootstrap()
+2018-11-08 14:43:40 [127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => 'gii',
+    'match' => false,
+    'parent' => null,
+]
+2018-11-08 14:43:40 [127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => 'gii/<id:\\w+>',
+    'match' => false,
+    'parent' => null,
+]
+2018-11-08 14:43:40 [127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => 'gii/<controller:[\\w\\-]+>/<action:[\\w\\-]+>',
+    'match' => false,
+    'parent' => null,
+]
+2018-11-08 14:43:40 [127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2018-11-08 14:43:40 [127.0.0.1][-][-][trace][yii\web\Application::handleRequest] Route requested: ''
+2018-11-08 14:43:40 [127.0.0.1][-][-][trace][yii\redis\Connection::open] Opening redis DB connection: 127.0.0.1:6379, database=0
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:60
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:36
+    in D:\wamp\vhost\tedcms\frontend\controllers\BaseController.php:22
+2018-11-08 14:43:40 [127.0.0.1][-][-][trace][yii\redis\Connection::executeCommand] Executing Redis Command: AUTH
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:60
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:36
+    in D:\wamp\vhost\tedcms\frontend\controllers\BaseController.php:22
+2018-11-08 14:43:40 [127.0.0.1][-][-][trace][yii\redis\Connection::executeCommand] Executing Redis Command: SELECT
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:60
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:36
+    in D:\wamp\vhost\tedcms\frontend\controllers\BaseController.php:22
+2018-11-08 14:43:40 [127.0.0.1][-][-][trace][yii\redis\Connection::executeCommand] Executing Redis Command: GET
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:60
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:36
+    in D:\wamp\vhost\tedcms\frontend\controllers\BaseController.php:22
+2018-11-08 14:43:40 [127.0.0.1][-][-][trace][yii\base\Controller::runAction] Route to run: site/index
+2018-11-08 14:43:40 [127.0.0.1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: frontend\controllers\SiteController::actionIndex()
+2018-11-08 14:43:40 [127.0.0.1][-][-][info][yii\db\Command::query] select * from `tedcms`.`ted_users`
+    in D:\wamp\vhost\tedcms\common\models\core\ClsMysql.php:84
+    in D:\wamp\vhost\tedcms\frontend\controllers\SiteController.php:36
+2018-11-08 14:43:40 [127.0.0.1][-][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=127.0.0.1;dbname=tedcms
+    in D:\wamp\vhost\tedcms\common\models\core\ClsMysql.php:84
+    in D:\wamp\vhost\tedcms\frontend\controllers\SiteController.php:36
+2018-11-08 14:43:40 [127.0.0.1][-][-][profile begin][yii\db\Connection::open] Opening DB connection: mysql:host=127.0.0.1;dbname=tedcms
+    in D:\wamp\vhost\tedcms\common\models\core\ClsMysql.php:84
+    in D:\wamp\vhost\tedcms\frontend\controllers\SiteController.php:36
+2018-11-08 14:43:40 [127.0.0.1][-][-][profile end][yii\db\Connection::open] Opening DB connection: mysql:host=127.0.0.1;dbname=tedcms
+    in D:\wamp\vhost\tedcms\common\models\core\ClsMysql.php:84
+    in D:\wamp\vhost\tedcms\frontend\controllers\SiteController.php:36
+2018-11-08 14:43:40 [127.0.0.1][-][-][profile begin][yii\db\Command::query] select * from `tedcms`.`ted_users`
+    in D:\wamp\vhost\tedcms\common\models\core\ClsMysql.php:84
+    in D:\wamp\vhost\tedcms\frontend\controllers\SiteController.php:36
+2018-11-08 14:43:40 [127.0.0.1][-][-][profile end][yii\db\Command::query] select * from `tedcms`.`ted_users`
+    in D:\wamp\vhost\tedcms\common\models\core\ClsMysql.php:84
+    in D:\wamp\vhost\tedcms\frontend\controllers\SiteController.php:36
+2018-11-08 14:43:40 [127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: D:\wamp\vhost\tedcms\frontend\views\site\index.php
+    in D:\wamp\vhost\tedcms\frontend\controllers\SiteController.php:37
+2018-11-08 14:43:40 [127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: D:\wamp\vhost\tedcms\frontend\views\layouts\main.php
+    in D:\wamp\vhost\tedcms\frontend\controllers\SiteController.php:37
+2018-11-08 14:43:40 [127.0.0.1][-][-][trace][yii\redis\Connection::executeCommand] Executing Redis Command: SET
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:106
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:117
+2018-11-08 14:43:40 [127.0.0.1][-][-][trace][yii\redis\Connection::executeCommand] Executing Redis Command: EXPIRE
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:109
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:117
+2018-11-08 14:43:40 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'br9ot0evbfgrm83kd2k6oqbl08'
+    'TEDCMS' => 'br9ot0evbfgrm83kd2k6oqbl08'
+    '_csrf-frontend' => '4129aa1416205b7af55516e42f7ba72757ffa09ccb2a17d1777ec68741538f31a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"í+a…‹P]žÿ>X¼Ç+NIÝè>Äôߌ8}å¶Eå\";}'
+]
+
+$_SESSION = [
+    'login_error_times' => 0
+    'admin_name' => 'admin'
+    'action_list' => ''
+    'last_check' => '1541630354'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www.tedcms.li'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.9 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://www.tedcms.li/site/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=br9ot0evbfgrm83kd2k6oqbl08; TEDCMS=br9ot0evbfgrm83kd2k6oqbl08; _csrf-frontend=4129aa1416205b7af55516e42f7ba72757ffa09ccb2a17d1777ec68741538f31a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%ED%2Ba%0F%85%8BP%5D%10%9E%FF%3EX%BC%C7%2BNI%DD%E8%3E%C4%F4%DF%8C8%7D%E5%19%B6E%E5%22%3B%7D'
+    'PATH' => 'D:\\ProgramData\\Python27\\;D:\\ProgramData\\Python27\\Scripts;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Perl64\\site\\bin;C:\\Perl64\\bin;D:\\app\\litid\\product\\11.2.0\\dbhome_1\\bin;C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\redist\\intel64\\compiler;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Windows\\System32\\Wbem;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\NVIDIA Corporation\\PhysX\\Common;D:\\Program Files\\Redis\\;D:\\Go\\bin;C:\\sqlite;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;D:\\ProgramData\\nodejs\\;D:\\Program Files\\VisualSVN Server\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Yarn\\bin\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;D:\\wamp\\bin\\hadoop\\hadoop-2.7.1\\bin;C:\\Program Files\\Java\\jdk1.8.0_161\\bin;D:\\wamp\\bin\\storm\\apache_storm\\bin;D:\\java\\apache-maven-3.5.3\\bin;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\scala\\bin;C:\\Program Files (x86)\\Intel\\Intel(R) Manageme;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\sbt\\bin;C:\\grep\\bin;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Lua\\5.1;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Lua\\5.1\\clibs;C:\\MinGW\\bin;C:\\MinGW\\x86_64-w64-mingw32\\bin;C:\\Vim\\vim80;C:\\Program Files\\R\\R-3.4.3\\bin;C:\\Program Files\\Java\\commons-logging-1.2;C:\\Program Files\\Java\\spring-framework-5.0.5\\libs;C:\\Program Files\\Java\\apache-ant-1.10.3\\bin;D:\\Android\\NDK\\android-ndk-r16b;C:\\ProgramData\\chocolatey\\bin;C:\\MinGW\\curl-7.59.0-win64-mingw\\bin;D:\\HashiCorp\\Vagrant\\bin;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\DTS\\Binn\\;D:\\flutter\\bin;D:\\Android\\SDK\\tools;D:\\Android\\SDK\\platform-tools;D:\\tools\\dart-sdk\\bin;D:\\wamp\\bin\\php\\php7.1.9;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Users\\litid\\.cargo\\bin;C:\\Program Files\\TortoiseSVN\\bin;D:\\Program Files\\TortoiseGit\\bin;D:\\Program Files\\Git\\cmd;C:\\Users\\litid\\AppData\\Roaming\\Python\\Scripts;D:\\Program Files (x86)\\Appium;D:\\Program Files (x86)\\Appium\\node_modules\\.bin;D:\\ProgramData\\nim\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.wlua;.lexe;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Win64) OpenSSL/1.1.0f PHP/7.1.9 Server at www.tedcms.li Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Win64) OpenSSL/1.1.0f PHP/7.1.9'
+    'SERVER_NAME' => 'www.tedcms.li'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/wamp/vhost/tedcms/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp/vhost/tedcms/frontend/web'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'D:/wamp/vhost/tedcms/frontend/web/index.php'
+    'REMOTE_PORT' => '54055'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1541659420.511
+    'REQUEST_TIME' => 1541659420
+]
+2018-11-08 14:43:40 [127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2018-11-08 14:43:40 [127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: gii
+2018-11-08 14:43:40 [127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\gii\Module::bootstrap()
+2018-11-08 14:43:40 [127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => 'gii',
+    'match' => false,
+    'parent' => null,
+]
+2018-11-08 14:43:40 [127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => 'gii/<id:\\w+>',
+    'match' => false,
+    'parent' => null,
+]
+2018-11-08 14:43:40 [127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => 'gii/<controller:[\\w\\-]+>/<action:[\\w\\-]+>',
+    'match' => false,
+    'parent' => null,
+]
+2018-11-08 14:43:40 [127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2018-11-08 14:43:40 [127.0.0.1][-][-][trace][yii\web\Application::handleRequest] Route requested: 'main'
+2018-11-08 14:43:40 [127.0.0.1][-][-][trace][yii\redis\Connection::open] Opening redis DB connection: 127.0.0.1:6379, database=0
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:60
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:36
+    in D:\wamp\vhost\tedcms\frontend\controllers\BaseController.php:22
+2018-11-08 14:43:40 [127.0.0.1][-][-][trace][yii\redis\Connection::executeCommand] Executing Redis Command: AUTH
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:60
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:36
+    in D:\wamp\vhost\tedcms\frontend\controllers\BaseController.php:22
+2018-11-08 14:43:40 [127.0.0.1][-][-][trace][yii\redis\Connection::executeCommand] Executing Redis Command: SELECT
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:60
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:36
+    in D:\wamp\vhost\tedcms\frontend\controllers\BaseController.php:22
+2018-11-08 14:43:40 [127.0.0.1][-][-][trace][yii\redis\Connection::executeCommand] Executing Redis Command: GET
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:60
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:36
+    in D:\wamp\vhost\tedcms\frontend\controllers\BaseController.php:22
+2018-11-08 14:43:40 [127.0.0.1][-][-][trace][yii\base\Controller::runAction] Route to run: main/index
+2018-11-08 14:43:40 [127.0.0.1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: frontend\controllers\MainController::actionIndex()
+2018-11-08 14:43:40 [127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: D:\wamp\vhost\tedcms\frontend\views\main\main.php
+    in D:\wamp\vhost\tedcms\frontend\controllers\MainController.php:12
+2018-11-08 14:43:40 [127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: D:\wamp\vhost\tedcms\frontend\views\layouts\main.php
+    in D:\wamp\vhost\tedcms\frontend\controllers\MainController.php:12
+2018-11-08 14:43:40 [127.0.0.1][-][-][trace][yii\redis\Connection::executeCommand] Executing Redis Command: SET
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:106
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:117
+2018-11-08 14:43:40 [127.0.0.1][-][-][trace][yii\redis\Connection::executeCommand] Executing Redis Command: EXPIRE
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:109
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:117
+2018-11-08 14:43:40 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'br9ot0evbfgrm83kd2k6oqbl08'
+    'TEDCMS' => 'br9ot0evbfgrm83kd2k6oqbl08'
+    '_csrf-frontend' => 'ff34457ca5b0770dd0458ca0ac63906f2bf6a344c6b440d40f887b6b2200e145a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"™¥ANw¢?NÑÄ��çjç™n¹\\¹È9CĆ_\";}'
+]
+
+$_SESSION = [
+    'login_error_times' => 0
+    'admin_name' => 'admin'
+    'action_list' => ''
+    'last_check' => '1541630354'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'www.tedcms.li'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.9 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://www.tedcms.li/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=br9ot0evbfgrm83kd2k6oqbl08; TEDCMS=br9ot0evbfgrm83kd2k6oqbl08; _csrf-frontend=ff34457ca5b0770dd0458ca0ac63906f2bf6a344c6b440d40f887b6b2200e145a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%99%C2%A5A%17Nw%A2%3FN%D1%1C%C4%C1%A8%02%E7%01j%15%E7%99n%B9%5C%B9%C89C%C4%86_%22%3B%7D'
+    'PATH' => 'D:\\ProgramData\\Python27\\;D:\\ProgramData\\Python27\\Scripts;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Perl64\\site\\bin;C:\\Perl64\\bin;D:\\app\\litid\\product\\11.2.0\\dbhome_1\\bin;C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\redist\\intel64\\compiler;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Windows\\System32\\Wbem;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\NVIDIA Corporation\\PhysX\\Common;D:\\Program Files\\Redis\\;D:\\Go\\bin;C:\\sqlite;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;D:\\ProgramData\\nodejs\\;D:\\Program Files\\VisualSVN Server\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Yarn\\bin\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;D:\\wamp\\bin\\hadoop\\hadoop-2.7.1\\bin;C:\\Program Files\\Java\\jdk1.8.0_161\\bin;D:\\wamp\\bin\\storm\\apache_storm\\bin;D:\\java\\apache-maven-3.5.3\\bin;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\scala\\bin;C:\\Program Files (x86)\\Intel\\Intel(R) Manageme;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\sbt\\bin;C:\\grep\\bin;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Lua\\5.1;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Lua\\5.1\\clibs;C:\\MinGW\\bin;C:\\MinGW\\x86_64-w64-mingw32\\bin;C:\\Vim\\vim80;C:\\Program Files\\R\\R-3.4.3\\bin;C:\\Program Files\\Java\\commons-logging-1.2;C:\\Program Files\\Java\\spring-framework-5.0.5\\libs;C:\\Program Files\\Java\\apache-ant-1.10.3\\bin;D:\\Android\\NDK\\android-ndk-r16b;C:\\ProgramData\\chocolatey\\bin;C:\\MinGW\\curl-7.59.0-win64-mingw\\bin;D:\\HashiCorp\\Vagrant\\bin;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\DTS\\Binn\\;D:\\flutter\\bin;D:\\Android\\SDK\\tools;D:\\Android\\SDK\\platform-tools;D:\\tools\\dart-sdk\\bin;D:\\wamp\\bin\\php\\php7.1.9;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Users\\litid\\.cargo\\bin;C:\\Program Files\\TortoiseSVN\\bin;D:\\Program Files\\TortoiseGit\\bin;D:\\Program Files\\Git\\cmd;C:\\Users\\litid\\AppData\\Roaming\\Python\\Scripts;D:\\Program Files (x86)\\Appium;D:\\Program Files (x86)\\Appium\\node_modules\\.bin;D:\\ProgramData\\nim\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.wlua;.lexe;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Win64) OpenSSL/1.1.0f PHP/7.1.9 Server at www.tedcms.li Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Win64) OpenSSL/1.1.0f PHP/7.1.9'
+    'SERVER_NAME' => 'www.tedcms.li'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/wamp/vhost/tedcms/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp/vhost/tedcms/frontend/web'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'D:/wamp/vhost/tedcms/frontend/web/index.php'
+    'REMOTE_PORT' => '54059'
+    'REDIRECT_URL' => '/main'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/main'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1541659420.82
+    'REQUEST_TIME' => 1541659420
+]
+2018-11-08 14:44:59 [127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2018-11-08 14:44:59 [127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: gii
+2018-11-08 14:44:59 [127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\gii\Module::bootstrap()
+2018-11-08 14:44:59 [127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => 'gii',
+    'match' => false,
+    'parent' => null,
+]
+2018-11-08 14:44:59 [127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => 'gii/<id:\\w+>',
+    'match' => false,
+    'parent' => null,
+]
+2018-11-08 14:44:59 [127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => 'gii/<controller:[\\w\\-]+>/<action:[\\w\\-]+>',
+    'match' => false,
+    'parent' => null,
+]
+2018-11-08 14:44:59 [127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2018-11-08 14:44:59 [127.0.0.1][-][-][trace][yii\web\Application::handleRequest] Route requested: ''
+2018-11-08 14:44:59 [127.0.0.1][-][-][trace][yii\redis\Connection::open] Opening redis DB connection: 127.0.0.1:6379, database=0
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:60
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:36
+    in D:\wamp\vhost\tedcms\frontend\controllers\BaseController.php:22
+2018-11-08 14:44:59 [127.0.0.1][-][-][trace][yii\redis\Connection::executeCommand] Executing Redis Command: AUTH
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:60
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:36
+    in D:\wamp\vhost\tedcms\frontend\controllers\BaseController.php:22
+2018-11-08 14:44:59 [127.0.0.1][-][-][trace][yii\redis\Connection::executeCommand] Executing Redis Command: SELECT
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:60
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:36
+    in D:\wamp\vhost\tedcms\frontend\controllers\BaseController.php:22
+2018-11-08 14:44:59 [127.0.0.1][-][-][trace][yii\redis\Connection::executeCommand] Executing Redis Command: GET
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:60
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:36
+    in D:\wamp\vhost\tedcms\frontend\controllers\BaseController.php:22
+2018-11-08 14:44:59 [127.0.0.1][-][-][trace][yii\base\Controller::runAction] Route to run: site/index
+2018-11-08 14:44:59 [127.0.0.1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: frontend\controllers\SiteController::actionIndex()
+2018-11-08 14:44:59 [127.0.0.1][-][-][info][yii\db\Command::query] select * from `tedcms`.`ted_users`
+    in D:\wamp\vhost\tedcms\common\models\core\ClsMysql.php:84
+    in D:\wamp\vhost\tedcms\frontend\controllers\SiteController.php:36
+2018-11-08 14:44:59 [127.0.0.1][-][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=127.0.0.1;dbname=tedcms
+    in D:\wamp\vhost\tedcms\common\models\core\ClsMysql.php:84
+    in D:\wamp\vhost\tedcms\frontend\controllers\SiteController.php:36
+2018-11-08 14:44:59 [127.0.0.1][-][-][profile begin][yii\db\Connection::open] Opening DB connection: mysql:host=127.0.0.1;dbname=tedcms
+    in D:\wamp\vhost\tedcms\common\models\core\ClsMysql.php:84
+    in D:\wamp\vhost\tedcms\frontend\controllers\SiteController.php:36
+2018-11-08 14:44:59 [127.0.0.1][-][-][profile end][yii\db\Connection::open] Opening DB connection: mysql:host=127.0.0.1;dbname=tedcms
+    in D:\wamp\vhost\tedcms\common\models\core\ClsMysql.php:84
+    in D:\wamp\vhost\tedcms\frontend\controllers\SiteController.php:36
+2018-11-08 14:44:59 [127.0.0.1][-][-][profile begin][yii\db\Command::query] select * from `tedcms`.`ted_users`
+    in D:\wamp\vhost\tedcms\common\models\core\ClsMysql.php:84
+    in D:\wamp\vhost\tedcms\frontend\controllers\SiteController.php:36
+2018-11-08 14:44:59 [127.0.0.1][-][-][profile end][yii\db\Command::query] select * from `tedcms`.`ted_users`
+    in D:\wamp\vhost\tedcms\common\models\core\ClsMysql.php:84
+    in D:\wamp\vhost\tedcms\frontend\controllers\SiteController.php:36
+2018-11-08 14:44:59 [127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: D:\wamp\vhost\tedcms\frontend\views\site\index.php
+    in D:\wamp\vhost\tedcms\frontend\controllers\SiteController.php:37
+2018-11-08 14:44:59 [127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: D:\wamp\vhost\tedcms\frontend\views\layouts\main.php
+    in D:\wamp\vhost\tedcms\frontend\controllers\SiteController.php:37
+2018-11-08 14:44:59 [127.0.0.1][-][-][trace][yii\redis\Connection::executeCommand] Executing Redis Command: SET
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:106
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:117
+2018-11-08 14:44:59 [127.0.0.1][-][-][trace][yii\redis\Connection::executeCommand] Executing Redis Command: EXPIRE
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:109
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:117
+2018-11-08 14:44:59 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'br9ot0evbfgrm83kd2k6oqbl08'
+    'TEDCMS' => 'br9ot0evbfgrm83kd2k6oqbl08'
+    '_csrf-frontend' => '0c92574066c4e67112a8d67f9133ad3d34643bbe04756bedfa7617079fbc8adba:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ÒHóæQjJ´3PBØF$‡�û±4#OÜJ>€jQl§\";}'
+]
+
+$_SESSION = [
+    'login_error_times' => 0
+    'admin_name' => 'admin'
+    'action_list' => ''
+    'last_check' => '1541630354'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www.tedcms.li'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.9 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://www.tedcms.li/site/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=br9ot0evbfgrm83kd2k6oqbl08; TEDCMS=br9ot0evbfgrm83kd2k6oqbl08; _csrf-frontend=0c92574066c4e67112a8d67f9133ad3d34643bbe04756bedfa7617079fbc8adba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%D2H%F3%E6QjJ%B43PB%D8F%24%87%E1%FB%B14%23%06O%DC%0BJ%3E%80jQ%01l%A7%22%3B%7D'
+    'PATH' => 'D:\\ProgramData\\Python27\\;D:\\ProgramData\\Python27\\Scripts;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Perl64\\site\\bin;C:\\Perl64\\bin;D:\\app\\litid\\product\\11.2.0\\dbhome_1\\bin;C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\redist\\intel64\\compiler;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Windows\\System32\\Wbem;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\NVIDIA Corporation\\PhysX\\Common;D:\\Program Files\\Redis\\;D:\\Go\\bin;C:\\sqlite;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;D:\\ProgramData\\nodejs\\;D:\\Program Files\\VisualSVN Server\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Yarn\\bin\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;D:\\wamp\\bin\\hadoop\\hadoop-2.7.1\\bin;C:\\Program Files\\Java\\jdk1.8.0_161\\bin;D:\\wamp\\bin\\storm\\apache_storm\\bin;D:\\java\\apache-maven-3.5.3\\bin;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\scala\\bin;C:\\Program Files (x86)\\Intel\\Intel(R) Manageme;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\sbt\\bin;C:\\grep\\bin;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Lua\\5.1;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Lua\\5.1\\clibs;C:\\MinGW\\bin;C:\\MinGW\\x86_64-w64-mingw32\\bin;C:\\Vim\\vim80;C:\\Program Files\\R\\R-3.4.3\\bin;C:\\Program Files\\Java\\commons-logging-1.2;C:\\Program Files\\Java\\spring-framework-5.0.5\\libs;C:\\Program Files\\Java\\apache-ant-1.10.3\\bin;D:\\Android\\NDK\\android-ndk-r16b;C:\\ProgramData\\chocolatey\\bin;C:\\MinGW\\curl-7.59.0-win64-mingw\\bin;D:\\HashiCorp\\Vagrant\\bin;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\DTS\\Binn\\;D:\\flutter\\bin;D:\\Android\\SDK\\tools;D:\\Android\\SDK\\platform-tools;D:\\tools\\dart-sdk\\bin;D:\\wamp\\bin\\php\\php7.1.9;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Users\\litid\\.cargo\\bin;C:\\Program Files\\TortoiseSVN\\bin;D:\\Program Files\\TortoiseGit\\bin;D:\\Program Files\\Git\\cmd;C:\\Users\\litid\\AppData\\Roaming\\Python\\Scripts;D:\\Program Files (x86)\\Appium;D:\\Program Files (x86)\\Appium\\node_modules\\.bin;D:\\ProgramData\\nim\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.wlua;.lexe;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Win64) OpenSSL/1.1.0f PHP/7.1.9 Server at www.tedcms.li Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Win64) OpenSSL/1.1.0f PHP/7.1.9'
+    'SERVER_NAME' => 'www.tedcms.li'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/wamp/vhost/tedcms/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp/vhost/tedcms/frontend/web'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'D:/wamp/vhost/tedcms/frontend/web/index.php'
+    'REMOTE_PORT' => '54166'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1541659499.629
+    'REQUEST_TIME' => 1541659499
+]
+2018-11-08 14:44:59 [127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2018-11-08 14:44:59 [127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: gii
+2018-11-08 14:44:59 [127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\gii\Module::bootstrap()
+2018-11-08 14:44:59 [127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => 'gii',
+    'match' => false,
+    'parent' => null,
+]
+2018-11-08 14:44:59 [127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => 'gii/<id:\\w+>',
+    'match' => false,
+    'parent' => null,
+]
+2018-11-08 14:44:59 [127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => 'gii/<controller:[\\w\\-]+>/<action:[\\w\\-]+>',
+    'match' => false,
+    'parent' => null,
+]
+2018-11-08 14:44:59 [127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2018-11-08 14:44:59 [127.0.0.1][-][-][trace][yii\web\Application::handleRequest] Route requested: 'main'
+2018-11-08 14:44:59 [127.0.0.1][-][-][trace][yii\redis\Connection::open] Opening redis DB connection: 127.0.0.1:6379, database=0
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:60
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:36
+    in D:\wamp\vhost\tedcms\frontend\controllers\BaseController.php:22
+2018-11-08 14:44:59 [127.0.0.1][-][-][trace][yii\redis\Connection::executeCommand] Executing Redis Command: AUTH
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:60
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:36
+    in D:\wamp\vhost\tedcms\frontend\controllers\BaseController.php:22
+2018-11-08 14:44:59 [127.0.0.1][-][-][trace][yii\redis\Connection::executeCommand] Executing Redis Command: SELECT
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:60
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:36
+    in D:\wamp\vhost\tedcms\frontend\controllers\BaseController.php:22
+2018-11-08 14:44:59 [127.0.0.1][-][-][trace][yii\redis\Connection::executeCommand] Executing Redis Command: GET
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:60
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:36
+    in D:\wamp\vhost\tedcms\frontend\controllers\BaseController.php:22
+2018-11-08 14:44:59 [127.0.0.1][-][-][trace][yii\base\Controller::runAction] Route to run: main/index
+2018-11-08 14:44:59 [127.0.0.1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: frontend\controllers\MainController::actionIndex()
+2018-11-08 14:45:00 [127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: D:\wamp\vhost\tedcms\frontend\views\main\main.php
+    in D:\wamp\vhost\tedcms\frontend\controllers\MainController.php:12
+2018-11-08 14:45:00 [127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: D:\wamp\vhost\tedcms\frontend\views\layouts\main.php
+    in D:\wamp\vhost\tedcms\frontend\controllers\MainController.php:12
+2018-11-08 14:45:00 [127.0.0.1][-][-][trace][yii\redis\Connection::executeCommand] Executing Redis Command: SET
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:106
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:117
+2018-11-08 14:45:00 [127.0.0.1][-][-][trace][yii\redis\Connection::executeCommand] Executing Redis Command: EXPIRE
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:109
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:117
+2018-11-08 14:44:59 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'br9ot0evbfgrm83kd2k6oqbl08'
+    'TEDCMS' => 'br9ot0evbfgrm83kd2k6oqbl08'
+    '_csrf-frontend' => '8b6abe1aa871796ab9900d5b8f616462b1fd9b622ad77ff96bbf4be5418949c1a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"Û�B ÊO5vTWFuŠGžÂü%؂äøõՙå$™Ȱ\"\";}'
+]
+
+$_SESSION = [
+    'login_error_times' => 0
+    'admin_name' => 'admin'
+    'action_list' => ''
+    'last_check' => '1541630354'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'www.tedcms.li'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.9 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://www.tedcms.li/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=br9ot0evbfgrm83kd2k6oqbl08; TEDCMS=br9ot0evbfgrm83kd2k6oqbl08; _csrf-frontend=8b6abe1aa871796ab9900d5b8f616462b1fd9b622ad77ff96bbf4be5418949c1a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%DB%E1B+%CA%01O5vTWFu%8AG%9E%C2%FC%25%D8%82%E4%F8%F5%D5%99%E5%24%99%C8%B0%22%22%3B%7D'
+    'PATH' => 'D:\\ProgramData\\Python27\\;D:\\ProgramData\\Python27\\Scripts;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Perl64\\site\\bin;C:\\Perl64\\bin;D:\\app\\litid\\product\\11.2.0\\dbhome_1\\bin;C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\redist\\intel64\\compiler;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Windows\\System32\\Wbem;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\NVIDIA Corporation\\PhysX\\Common;D:\\Program Files\\Redis\\;D:\\Go\\bin;C:\\sqlite;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;D:\\ProgramData\\nodejs\\;D:\\Program Files\\VisualSVN Server\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Yarn\\bin\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;D:\\wamp\\bin\\hadoop\\hadoop-2.7.1\\bin;C:\\Program Files\\Java\\jdk1.8.0_161\\bin;D:\\wamp\\bin\\storm\\apache_storm\\bin;D:\\java\\apache-maven-3.5.3\\bin;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\scala\\bin;C:\\Program Files (x86)\\Intel\\Intel(R) Manageme;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\sbt\\bin;C:\\grep\\bin;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Lua\\5.1;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Lua\\5.1\\clibs;C:\\MinGW\\bin;C:\\MinGW\\x86_64-w64-mingw32\\bin;C:\\Vim\\vim80;C:\\Program Files\\R\\R-3.4.3\\bin;C:\\Program Files\\Java\\commons-logging-1.2;C:\\Program Files\\Java\\spring-framework-5.0.5\\libs;C:\\Program Files\\Java\\apache-ant-1.10.3\\bin;D:\\Android\\NDK\\android-ndk-r16b;C:\\ProgramData\\chocolatey\\bin;C:\\MinGW\\curl-7.59.0-win64-mingw\\bin;D:\\HashiCorp\\Vagrant\\bin;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\DTS\\Binn\\;D:\\flutter\\bin;D:\\Android\\SDK\\tools;D:\\Android\\SDK\\platform-tools;D:\\tools\\dart-sdk\\bin;D:\\wamp\\bin\\php\\php7.1.9;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Users\\litid\\.cargo\\bin;C:\\Program Files\\TortoiseSVN\\bin;D:\\Program Files\\TortoiseGit\\bin;D:\\Program Files\\Git\\cmd;C:\\Users\\litid\\AppData\\Roaming\\Python\\Scripts;D:\\Program Files (x86)\\Appium;D:\\Program Files (x86)\\Appium\\node_modules\\.bin;D:\\ProgramData\\nim\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.wlua;.lexe;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Win64) OpenSSL/1.1.0f PHP/7.1.9 Server at www.tedcms.li Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Win64) OpenSSL/1.1.0f PHP/7.1.9'
+    'SERVER_NAME' => 'www.tedcms.li'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/wamp/vhost/tedcms/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp/vhost/tedcms/frontend/web'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'D:/wamp/vhost/tedcms/frontend/web/index.php'
+    'REMOTE_PORT' => '54172'
+    'REDIRECT_URL' => '/main'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/main'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1541659499.925
+    'REQUEST_TIME' => 1541659499
+]
+2018-11-08 14:46:53 [127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2018-11-08 14:46:53 [127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: gii
+2018-11-08 14:46:53 [127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\gii\Module::bootstrap()
+2018-11-08 14:46:53 [127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => 'gii',
+    'match' => false,
+    'parent' => null,
+]
+2018-11-08 14:46:53 [127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => 'gii/<id:\\w+>',
+    'match' => false,
+    'parent' => null,
+]
+2018-11-08 14:46:53 [127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => 'gii/<controller:[\\w\\-]+>/<action:[\\w\\-]+>',
+    'match' => false,
+    'parent' => null,
+]
+2018-11-08 14:46:53 [127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2018-11-08 14:46:53 [127.0.0.1][-][-][trace][yii\web\Application::handleRequest] Route requested: ''
+2018-11-08 14:46:53 [127.0.0.1][-][-][trace][yii\redis\Connection::open] Opening redis DB connection: 127.0.0.1:6379, database=0
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:60
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:36
+    in D:\wamp\vhost\tedcms\frontend\controllers\BaseController.php:22
+2018-11-08 14:46:53 [127.0.0.1][-][-][trace][yii\redis\Connection::executeCommand] Executing Redis Command: AUTH
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:60
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:36
+    in D:\wamp\vhost\tedcms\frontend\controllers\BaseController.php:22
+2018-11-08 14:46:53 [127.0.0.1][-][-][trace][yii\redis\Connection::executeCommand] Executing Redis Command: SELECT
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:60
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:36
+    in D:\wamp\vhost\tedcms\frontend\controllers\BaseController.php:22
+2018-11-08 14:46:53 [127.0.0.1][-][-][trace][yii\redis\Connection::executeCommand] Executing Redis Command: GET
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:60
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:36
+    in D:\wamp\vhost\tedcms\frontend\controllers\BaseController.php:22
+2018-11-08 14:46:53 [127.0.0.1][-][-][trace][yii\base\Controller::runAction] Route to run: site/index
+2018-11-08 14:46:53 [127.0.0.1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: frontend\controllers\SiteController::actionIndex()
+2018-11-08 14:46:53 [127.0.0.1][-][-][info][yii\db\Command::query] select * from `tedcms`.`ted_users`
+    in D:\wamp\vhost\tedcms\common\models\core\ClsMysql.php:84
+    in D:\wamp\vhost\tedcms\frontend\controllers\SiteController.php:36
+2018-11-08 14:46:53 [127.0.0.1][-][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=127.0.0.1;dbname=tedcms
+    in D:\wamp\vhost\tedcms\common\models\core\ClsMysql.php:84
+    in D:\wamp\vhost\tedcms\frontend\controllers\SiteController.php:36
+2018-11-08 14:46:53 [127.0.0.1][-][-][profile begin][yii\db\Connection::open] Opening DB connection: mysql:host=127.0.0.1;dbname=tedcms
+    in D:\wamp\vhost\tedcms\common\models\core\ClsMysql.php:84
+    in D:\wamp\vhost\tedcms\frontend\controllers\SiteController.php:36
+2018-11-08 14:46:53 [127.0.0.1][-][-][profile end][yii\db\Connection::open] Opening DB connection: mysql:host=127.0.0.1;dbname=tedcms
+    in D:\wamp\vhost\tedcms\common\models\core\ClsMysql.php:84
+    in D:\wamp\vhost\tedcms\frontend\controllers\SiteController.php:36
+2018-11-08 14:46:53 [127.0.0.1][-][-][profile begin][yii\db\Command::query] select * from `tedcms`.`ted_users`
+    in D:\wamp\vhost\tedcms\common\models\core\ClsMysql.php:84
+    in D:\wamp\vhost\tedcms\frontend\controllers\SiteController.php:36
+2018-11-08 14:46:53 [127.0.0.1][-][-][profile end][yii\db\Command::query] select * from `tedcms`.`ted_users`
+    in D:\wamp\vhost\tedcms\common\models\core\ClsMysql.php:84
+    in D:\wamp\vhost\tedcms\frontend\controllers\SiteController.php:36
+2018-11-08 14:46:53 [127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: D:\wamp\vhost\tedcms\frontend\views\site\index.php
+    in D:\wamp\vhost\tedcms\frontend\controllers\SiteController.php:37
+2018-11-08 14:46:53 [127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: D:\wamp\vhost\tedcms\frontend\views\layouts\main.php
+    in D:\wamp\vhost\tedcms\frontend\controllers\SiteController.php:37
+2018-11-08 14:46:53 [127.0.0.1][-][-][trace][yii\redis\Connection::executeCommand] Executing Redis Command: SET
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:106
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:117
+2018-11-08 14:46:53 [127.0.0.1][-][-][trace][yii\redis\Connection::executeCommand] Executing Redis Command: EXPIRE
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:109
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:117
+2018-11-08 14:46:53 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'br9ot0evbfgrm83kd2k6oqbl08'
+    'TEDCMS' => 'br9ot0evbfgrm83kd2k6oqbl08'
+    '_csrf-frontend' => 'b0b46af6e3485f9f31a3a1b204247b339627a1449825772320be1189b65b9b04a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"¡իg´ÓҦ¸,˜«¶Ðõ¤b‡騨ý¯.0ð\";}'
+]
+
+$_SESSION = [
+    'login_error_times' => 0
+    'admin_name' => 'admin'
+    'action_list' => ''
+    'last_check' => '1541630354'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www.tedcms.li'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.9 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://www.tedcms.li/site/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=br9ot0evbfgrm83kd2k6oqbl08; TEDCMS=br9ot0evbfgrm83kd2k6oqbl08; _csrf-frontend=b0b46af6e3485f9f31a3a1b204247b339627a1449825772320be1189b65b9b04a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%A1%D5%ABg%B4%D3%D2%A6%05%B8%2C%08%98%AB%1B%B6%D0%F5%A4%0Eb%87%E9%A8%A8%FD%AF.0%15%F0%1F%22%3B%7D'
+    'PATH' => 'D:\\ProgramData\\Python27\\;D:\\ProgramData\\Python27\\Scripts;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Perl64\\site\\bin;C:\\Perl64\\bin;D:\\app\\litid\\product\\11.2.0\\dbhome_1\\bin;C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\redist\\intel64\\compiler;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Windows\\System32\\Wbem;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\NVIDIA Corporation\\PhysX\\Common;D:\\Program Files\\Redis\\;D:\\Go\\bin;C:\\sqlite;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;D:\\ProgramData\\nodejs\\;D:\\Program Files\\VisualSVN Server\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Yarn\\bin\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;D:\\wamp\\bin\\hadoop\\hadoop-2.7.1\\bin;C:\\Program Files\\Java\\jdk1.8.0_161\\bin;D:\\wamp\\bin\\storm\\apache_storm\\bin;D:\\java\\apache-maven-3.5.3\\bin;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\scala\\bin;C:\\Program Files (x86)\\Intel\\Intel(R) Manageme;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\sbt\\bin;C:\\grep\\bin;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Lua\\5.1;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Lua\\5.1\\clibs;C:\\MinGW\\bin;C:\\MinGW\\x86_64-w64-mingw32\\bin;C:\\Vim\\vim80;C:\\Program Files\\R\\R-3.4.3\\bin;C:\\Program Files\\Java\\commons-logging-1.2;C:\\Program Files\\Java\\spring-framework-5.0.5\\libs;C:\\Program Files\\Java\\apache-ant-1.10.3\\bin;D:\\Android\\NDK\\android-ndk-r16b;C:\\ProgramData\\chocolatey\\bin;C:\\MinGW\\curl-7.59.0-win64-mingw\\bin;D:\\HashiCorp\\Vagrant\\bin;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\DTS\\Binn\\;D:\\flutter\\bin;D:\\Android\\SDK\\tools;D:\\Android\\SDK\\platform-tools;D:\\tools\\dart-sdk\\bin;D:\\wamp\\bin\\php\\php7.1.9;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Users\\litid\\.cargo\\bin;C:\\Program Files\\TortoiseSVN\\bin;D:\\Program Files\\TortoiseGit\\bin;D:\\Program Files\\Git\\cmd;C:\\Users\\litid\\AppData\\Roaming\\Python\\Scripts;D:\\Program Files (x86)\\Appium;D:\\Program Files (x86)\\Appium\\node_modules\\.bin;D:\\ProgramData\\nim\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.wlua;.lexe;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Win64) OpenSSL/1.1.0f PHP/7.1.9 Server at www.tedcms.li Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Win64) OpenSSL/1.1.0f PHP/7.1.9'
+    'SERVER_NAME' => 'www.tedcms.li'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/wamp/vhost/tedcms/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp/vhost/tedcms/frontend/web'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'D:/wamp/vhost/tedcms/frontend/web/index.php'
+    'REMOTE_PORT' => '54324'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1541659613.308
+    'REQUEST_TIME' => 1541659613
+]
+2018-11-08 14:46:53 [127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2018-11-08 14:46:53 [127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: gii
+2018-11-08 14:46:53 [127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\gii\Module::bootstrap()
+2018-11-08 14:46:53 [127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => 'gii',
+    'match' => false,
+    'parent' => null,
+]
+2018-11-08 14:46:53 [127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => 'gii/<id:\\w+>',
+    'match' => false,
+    'parent' => null,
+]
+2018-11-08 14:46:53 [127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => 'gii/<controller:[\\w\\-]+>/<action:[\\w\\-]+>',
+    'match' => false,
+    'parent' => null,
+]
+2018-11-08 14:46:53 [127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2018-11-08 14:46:53 [127.0.0.1][-][-][trace][yii\web\Application::handleRequest] Route requested: 'main'
+2018-11-08 14:46:53 [127.0.0.1][-][-][trace][yii\redis\Connection::open] Opening redis DB connection: 127.0.0.1:6379, database=0
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:60
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:36
+    in D:\wamp\vhost\tedcms\frontend\controllers\BaseController.php:22
+2018-11-08 14:46:53 [127.0.0.1][-][-][trace][yii\redis\Connection::executeCommand] Executing Redis Command: AUTH
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:60
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:36
+    in D:\wamp\vhost\tedcms\frontend\controllers\BaseController.php:22
+2018-11-08 14:46:53 [127.0.0.1][-][-][trace][yii\redis\Connection::executeCommand] Executing Redis Command: SELECT
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:60
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:36
+    in D:\wamp\vhost\tedcms\frontend\controllers\BaseController.php:22
+2018-11-08 14:46:53 [127.0.0.1][-][-][trace][yii\redis\Connection::executeCommand] Executing Redis Command: GET
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:60
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:36
+    in D:\wamp\vhost\tedcms\frontend\controllers\BaseController.php:22
+2018-11-08 14:46:53 [127.0.0.1][-][-][trace][yii\base\Controller::runAction] Route to run: main/index
+2018-11-08 14:46:53 [127.0.0.1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: frontend\controllers\MainController::actionIndex()
+2018-11-08 14:46:53 [127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: D:\wamp\vhost\tedcms\frontend\views\main\main.php
+    in D:\wamp\vhost\tedcms\frontend\controllers\MainController.php:12
+2018-11-08 14:46:53 [127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: D:\wamp\vhost\tedcms\frontend\views\layouts\main.php
+    in D:\wamp\vhost\tedcms\frontend\controllers\MainController.php:12
+2018-11-08 14:46:53 [127.0.0.1][-][-][trace][yii\redis\Connection::executeCommand] Executing Redis Command: SET
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:106
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:117
+2018-11-08 14:46:53 [127.0.0.1][-][-][trace][yii\redis\Connection::executeCommand] Executing Redis Command: EXPIRE
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:109
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:117
+2018-11-08 14:46:53 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'br9ot0evbfgrm83kd2k6oqbl08'
+    'TEDCMS' => 'br9ot0evbfgrm83kd2k6oqbl08'
+    '_csrf-frontend' => '1ae1a7cc3ba4fdad26687925516f839e6b1081783b4d9c234afca4721ead3a1fa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ÒyžöGßëúüÂU7Ù2çê\'æQv¡â×µèIhEŸ\";}'
+]
+
+$_SESSION = [
+    'login_error_times' => 0
+    'admin_name' => 'admin'
+    'action_list' => ''
+    'last_check' => '1541630354'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'www.tedcms.li'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.9 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://www.tedcms.li/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=br9ot0evbfgrm83kd2k6oqbl08; TEDCMS=br9ot0evbfgrm83kd2k6oqbl08; _csrf-frontend=1ae1a7cc3ba4fdad26687925516f839e6b1081783b4d9c234afca4721ead3a1fa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%D2y%9E%F6G%DF%EB%FA%FC%C2U7%D92%E7%19%EA%27%E6Qv%A1%E2%D7%1A%B5%E8Ih%0EE%9F%22%3B%7D'
+    'PATH' => 'D:\\ProgramData\\Python27\\;D:\\ProgramData\\Python27\\Scripts;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Perl64\\site\\bin;C:\\Perl64\\bin;D:\\app\\litid\\product\\11.2.0\\dbhome_1\\bin;C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\redist\\intel64\\compiler;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Windows\\System32\\Wbem;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\NVIDIA Corporation\\PhysX\\Common;D:\\Program Files\\Redis\\;D:\\Go\\bin;C:\\sqlite;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;D:\\ProgramData\\nodejs\\;D:\\Program Files\\VisualSVN Server\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Yarn\\bin\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;D:\\wamp\\bin\\hadoop\\hadoop-2.7.1\\bin;C:\\Program Files\\Java\\jdk1.8.0_161\\bin;D:\\wamp\\bin\\storm\\apache_storm\\bin;D:\\java\\apache-maven-3.5.3\\bin;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\scala\\bin;C:\\Program Files (x86)\\Intel\\Intel(R) Manageme;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\sbt\\bin;C:\\grep\\bin;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Lua\\5.1;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Lua\\5.1\\clibs;C:\\MinGW\\bin;C:\\MinGW\\x86_64-w64-mingw32\\bin;C:\\Vim\\vim80;C:\\Program Files\\R\\R-3.4.3\\bin;C:\\Program Files\\Java\\commons-logging-1.2;C:\\Program Files\\Java\\spring-framework-5.0.5\\libs;C:\\Program Files\\Java\\apache-ant-1.10.3\\bin;D:\\Android\\NDK\\android-ndk-r16b;C:\\ProgramData\\chocolatey\\bin;C:\\MinGW\\curl-7.59.0-win64-mingw\\bin;D:\\HashiCorp\\Vagrant\\bin;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\DTS\\Binn\\;D:\\flutter\\bin;D:\\Android\\SDK\\tools;D:\\Android\\SDK\\platform-tools;D:\\tools\\dart-sdk\\bin;D:\\wamp\\bin\\php\\php7.1.9;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Users\\litid\\.cargo\\bin;C:\\Program Files\\TortoiseSVN\\bin;D:\\Program Files\\TortoiseGit\\bin;D:\\Program Files\\Git\\cmd;C:\\Users\\litid\\AppData\\Roaming\\Python\\Scripts;D:\\Program Files (x86)\\Appium;D:\\Program Files (x86)\\Appium\\node_modules\\.bin;D:\\ProgramData\\nim\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.wlua;.lexe;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Win64) OpenSSL/1.1.0f PHP/7.1.9 Server at www.tedcms.li Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Win64) OpenSSL/1.1.0f PHP/7.1.9'
+    'SERVER_NAME' => 'www.tedcms.li'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/wamp/vhost/tedcms/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp/vhost/tedcms/frontend/web'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'D:/wamp/vhost/tedcms/frontend/web/index.php'
+    'REMOTE_PORT' => '54328'
+    'REDIRECT_URL' => '/main'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/main'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1541659613.627
+    'REQUEST_TIME' => 1541659613
+]
+2018-11-08 14:47:33 [127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2018-11-08 14:47:33 [127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: gii
+2018-11-08 14:47:33 [127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\gii\Module::bootstrap()
+2018-11-08 14:47:33 [127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => 'gii',
+    'match' => false,
+    'parent' => null,
+]
+2018-11-08 14:47:33 [127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => 'gii/<id:\\w+>',
+    'match' => false,
+    'parent' => null,
+]
+2018-11-08 14:47:33 [127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => 'gii/<controller:[\\w\\-]+>/<action:[\\w\\-]+>',
+    'match' => false,
+    'parent' => null,
+]
+2018-11-08 14:47:33 [127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2018-11-08 14:47:33 [127.0.0.1][-][-][trace][yii\web\Application::handleRequest] Route requested: ''
+2018-11-08 14:47:33 [127.0.0.1][-][-][trace][yii\redis\Connection::open] Opening redis DB connection: 127.0.0.1:6379, database=0
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:60
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:36
+    in D:\wamp\vhost\tedcms\frontend\controllers\BaseController.php:22
+2018-11-08 14:47:33 [127.0.0.1][-][-][trace][yii\redis\Connection::executeCommand] Executing Redis Command: AUTH
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:60
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:36
+    in D:\wamp\vhost\tedcms\frontend\controllers\BaseController.php:22
+2018-11-08 14:47:33 [127.0.0.1][-][-][trace][yii\redis\Connection::executeCommand] Executing Redis Command: SELECT
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:60
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:36
+    in D:\wamp\vhost\tedcms\frontend\controllers\BaseController.php:22
+2018-11-08 14:47:33 [127.0.0.1][-][-][trace][yii\redis\Connection::executeCommand] Executing Redis Command: GET
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:60
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:36
+    in D:\wamp\vhost\tedcms\frontend\controllers\BaseController.php:22
+2018-11-08 14:47:33 [127.0.0.1][-][-][trace][yii\base\Controller::runAction] Route to run: site/index
+2018-11-08 14:47:33 [127.0.0.1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: frontend\controllers\SiteController::actionIndex()
+2018-11-08 14:47:33 [127.0.0.1][-][-][info][yii\db\Command::query] select * from `tedcms`.`ted_users`
+    in D:\wamp\vhost\tedcms\common\models\core\ClsMysql.php:84
+    in D:\wamp\vhost\tedcms\frontend\controllers\SiteController.php:36
+2018-11-08 14:47:33 [127.0.0.1][-][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=127.0.0.1;dbname=tedcms
+    in D:\wamp\vhost\tedcms\common\models\core\ClsMysql.php:84
+    in D:\wamp\vhost\tedcms\frontend\controllers\SiteController.php:36
+2018-11-08 14:47:33 [127.0.0.1][-][-][profile begin][yii\db\Connection::open] Opening DB connection: mysql:host=127.0.0.1;dbname=tedcms
+    in D:\wamp\vhost\tedcms\common\models\core\ClsMysql.php:84
+    in D:\wamp\vhost\tedcms\frontend\controllers\SiteController.php:36
+2018-11-08 14:47:33 [127.0.0.1][-][-][profile end][yii\db\Connection::open] Opening DB connection: mysql:host=127.0.0.1;dbname=tedcms
+    in D:\wamp\vhost\tedcms\common\models\core\ClsMysql.php:84
+    in D:\wamp\vhost\tedcms\frontend\controllers\SiteController.php:36
+2018-11-08 14:47:33 [127.0.0.1][-][-][profile begin][yii\db\Command::query] select * from `tedcms`.`ted_users`
+    in D:\wamp\vhost\tedcms\common\models\core\ClsMysql.php:84
+    in D:\wamp\vhost\tedcms\frontend\controllers\SiteController.php:36
+2018-11-08 14:47:33 [127.0.0.1][-][-][profile end][yii\db\Command::query] select * from `tedcms`.`ted_users`
+    in D:\wamp\vhost\tedcms\common\models\core\ClsMysql.php:84
+    in D:\wamp\vhost\tedcms\frontend\controllers\SiteController.php:36
+2018-11-08 14:47:33 [127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: D:\wamp\vhost\tedcms\frontend\views\site\index.php
+    in D:\wamp\vhost\tedcms\frontend\controllers\SiteController.php:37
+2018-11-08 14:47:33 [127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: D:\wamp\vhost\tedcms\frontend\views\layouts\main.php
+    in D:\wamp\vhost\tedcms\frontend\controllers\SiteController.php:37
+2018-11-08 14:47:33 [127.0.0.1][-][-][trace][yii\redis\Connection::executeCommand] Executing Redis Command: SET
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:106
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:117
+2018-11-08 14:47:33 [127.0.0.1][-][-][trace][yii\redis\Connection::executeCommand] Executing Redis Command: EXPIRE
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:109
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:117
+2018-11-08 14:47:33 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'br9ot0evbfgrm83kd2k6oqbl08'
+    'TEDCMS' => 'br9ot0evbfgrm83kd2k6oqbl08'
+    '_csrf-frontend' => 'c3b67c6af9300a8614e456cf1c4181566c3dce33f322bdd5081e540c0040e8dda:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"PCÔꇶÖÚ̧+ê0\0ÒH®géûè…Qw\'\\*ß\";}'
+]
+
+$_SESSION = [
+    'login_error_times' => 0
+    'admin_name' => 'admin'
+    'action_list' => ''
+    'last_check' => '1541630354'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www.tedcms.li'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.9 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://www.tedcms.li/site/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=br9ot0evbfgrm83kd2k6oqbl08; TEDCMS=br9ot0evbfgrm83kd2k6oqbl08; _csrf-frontend=c3b67c6af9300a8614e456cf1c4181566c3dce33f322bdd5081e540c0040e8dda%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22PC%D4%EA%87%B6%8D%01%D6%DA%CC%A7%8F%2B%EA0%00%D2H%AEg%E9%0F%FB%E8%85Qw%27%5C%2A%DF%22%3B%7D'
+    'PATH' => 'D:\\ProgramData\\Python27\\;D:\\ProgramData\\Python27\\Scripts;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Perl64\\site\\bin;C:\\Perl64\\bin;D:\\app\\litid\\product\\11.2.0\\dbhome_1\\bin;C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\redist\\intel64\\compiler;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Windows\\System32\\Wbem;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\NVIDIA Corporation\\PhysX\\Common;D:\\Program Files\\Redis\\;D:\\Go\\bin;C:\\sqlite;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;D:\\ProgramData\\nodejs\\;D:\\Program Files\\VisualSVN Server\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Yarn\\bin\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;D:\\wamp\\bin\\hadoop\\hadoop-2.7.1\\bin;C:\\Program Files\\Java\\jdk1.8.0_161\\bin;D:\\wamp\\bin\\storm\\apache_storm\\bin;D:\\java\\apache-maven-3.5.3\\bin;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\scala\\bin;C:\\Program Files (x86)\\Intel\\Intel(R) Manageme;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\sbt\\bin;C:\\grep\\bin;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Lua\\5.1;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Lua\\5.1\\clibs;C:\\MinGW\\bin;C:\\MinGW\\x86_64-w64-mingw32\\bin;C:\\Vim\\vim80;C:\\Program Files\\R\\R-3.4.3\\bin;C:\\Program Files\\Java\\commons-logging-1.2;C:\\Program Files\\Java\\spring-framework-5.0.5\\libs;C:\\Program Files\\Java\\apache-ant-1.10.3\\bin;D:\\Android\\NDK\\android-ndk-r16b;C:\\ProgramData\\chocolatey\\bin;C:\\MinGW\\curl-7.59.0-win64-mingw\\bin;D:\\HashiCorp\\Vagrant\\bin;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\DTS\\Binn\\;D:\\flutter\\bin;D:\\Android\\SDK\\tools;D:\\Android\\SDK\\platform-tools;D:\\tools\\dart-sdk\\bin;D:\\wamp\\bin\\php\\php7.1.9;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Users\\litid\\.cargo\\bin;C:\\Program Files\\TortoiseSVN\\bin;D:\\Program Files\\TortoiseGit\\bin;D:\\Program Files\\Git\\cmd;C:\\Users\\litid\\AppData\\Roaming\\Python\\Scripts;D:\\Program Files (x86)\\Appium;D:\\Program Files (x86)\\Appium\\node_modules\\.bin;D:\\ProgramData\\nim\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.wlua;.lexe;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Win64) OpenSSL/1.1.0f PHP/7.1.9 Server at www.tedcms.li Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Win64) OpenSSL/1.1.0f PHP/7.1.9'
+    'SERVER_NAME' => 'www.tedcms.li'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/wamp/vhost/tedcms/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp/vhost/tedcms/frontend/web'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'D:/wamp/vhost/tedcms/frontend/web/index.php'
+    'REMOTE_PORT' => '54382'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1541659653.353
+    'REQUEST_TIME' => 1541659653
+]
+2018-11-08 14:47:33 [127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2018-11-08 14:47:33 [127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: gii
+2018-11-08 14:47:33 [127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\gii\Module::bootstrap()
+2018-11-08 14:47:33 [127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => 'gii',
+    'match' => false,
+    'parent' => null,
+]
+2018-11-08 14:47:33 [127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => 'gii/<id:\\w+>',
+    'match' => false,
+    'parent' => null,
+]
+2018-11-08 14:47:33 [127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => 'gii/<controller:[\\w\\-]+>/<action:[\\w\\-]+>',
+    'match' => false,
+    'parent' => null,
+]
+2018-11-08 14:47:33 [127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2018-11-08 14:47:33 [127.0.0.1][-][-][trace][yii\web\Application::handleRequest] Route requested: 'main'
+2018-11-08 14:47:33 [127.0.0.1][-][-][trace][yii\redis\Connection::open] Opening redis DB connection: 127.0.0.1:6379, database=0
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:60
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:36
+    in D:\wamp\vhost\tedcms\frontend\controllers\BaseController.php:22
+2018-11-08 14:47:33 [127.0.0.1][-][-][trace][yii\redis\Connection::executeCommand] Executing Redis Command: AUTH
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:60
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:36
+    in D:\wamp\vhost\tedcms\frontend\controllers\BaseController.php:22
+2018-11-08 14:47:33 [127.0.0.1][-][-][trace][yii\redis\Connection::executeCommand] Executing Redis Command: SELECT
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:60
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:36
+    in D:\wamp\vhost\tedcms\frontend\controllers\BaseController.php:22
+2018-11-08 14:47:33 [127.0.0.1][-][-][trace][yii\redis\Connection::executeCommand] Executing Redis Command: GET
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:60
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:36
+    in D:\wamp\vhost\tedcms\frontend\controllers\BaseController.php:22
+2018-11-08 14:47:33 [127.0.0.1][-][-][trace][yii\base\Controller::runAction] Route to run: main/index
+2018-11-08 14:47:33 [127.0.0.1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: frontend\controllers\MainController::actionIndex()
+2018-11-08 14:47:33 [127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: D:\wamp\vhost\tedcms\frontend\views\main\main.php
+    in D:\wamp\vhost\tedcms\frontend\controllers\MainController.php:12
+2018-11-08 14:47:33 [127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: D:\wamp\vhost\tedcms\frontend\views\layouts\main.php
+    in D:\wamp\vhost\tedcms\frontend\controllers\MainController.php:12
+2018-11-08 14:47:33 [127.0.0.1][-][-][trace][yii\redis\Connection::executeCommand] Executing Redis Command: SET
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:106
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:117
+2018-11-08 14:47:33 [127.0.0.1][-][-][trace][yii\redis\Connection::executeCommand] Executing Redis Command: EXPIRE
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:109
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:117
+2018-11-08 14:47:33 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'br9ot0evbfgrm83kd2k6oqbl08'
+    'TEDCMS' => 'br9ot0evbfgrm83kd2k6oqbl08'
+    '_csrf-frontend' => '013109da19754ff989f02bc66f1f1bb8d205154b8c1a86a90e6e3e51038d0a5fa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"žoL:ÔBX;ëÖ?  #6�—_äÌóêŽJ·õJµ\";}'
+]
+
+$_SESSION = [
+    'login_error_times' => 0
+    'admin_name' => 'admin'
+    'action_list' => ''
+    'last_check' => '1541630354'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'www.tedcms.li'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.9 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://www.tedcms.li/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=br9ot0evbfgrm83kd2k6oqbl08; TEDCMS=br9ot0evbfgrm83kd2k6oqbl08; _csrf-frontend=013109da19754ff989f02bc66f1f1bb8d205154b8c1a86a90e6e3e51038d0a5fa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%9EoL%3A%1D%D4B%1CX%3B%EB%D6%3F++%23%1D6%E1%1F%97_%E4%CC%F3%EA%8EJ%B7%F5J%B5%22%3B%7D'
+    'PATH' => 'D:\\ProgramData\\Python27\\;D:\\ProgramData\\Python27\\Scripts;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Perl64\\site\\bin;C:\\Perl64\\bin;D:\\app\\litid\\product\\11.2.0\\dbhome_1\\bin;C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\redist\\intel64\\compiler;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Windows\\System32\\Wbem;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\NVIDIA Corporation\\PhysX\\Common;D:\\Program Files\\Redis\\;D:\\Go\\bin;C:\\sqlite;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;D:\\ProgramData\\nodejs\\;D:\\Program Files\\VisualSVN Server\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Yarn\\bin\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;D:\\wamp\\bin\\hadoop\\hadoop-2.7.1\\bin;C:\\Program Files\\Java\\jdk1.8.0_161\\bin;D:\\wamp\\bin\\storm\\apache_storm\\bin;D:\\java\\apache-maven-3.5.3\\bin;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\scala\\bin;C:\\Program Files (x86)\\Intel\\Intel(R) Manageme;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\sbt\\bin;C:\\grep\\bin;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Lua\\5.1;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Lua\\5.1\\clibs;C:\\MinGW\\bin;C:\\MinGW\\x86_64-w64-mingw32\\bin;C:\\Vim\\vim80;C:\\Program Files\\R\\R-3.4.3\\bin;C:\\Program Files\\Java\\commons-logging-1.2;C:\\Program Files\\Java\\spring-framework-5.0.5\\libs;C:\\Program Files\\Java\\apache-ant-1.10.3\\bin;D:\\Android\\NDK\\android-ndk-r16b;C:\\ProgramData\\chocolatey\\bin;C:\\MinGW\\curl-7.59.0-win64-mingw\\bin;D:\\HashiCorp\\Vagrant\\bin;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\DTS\\Binn\\;D:\\flutter\\bin;D:\\Android\\SDK\\tools;D:\\Android\\SDK\\platform-tools;D:\\tools\\dart-sdk\\bin;D:\\wamp\\bin\\php\\php7.1.9;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Users\\litid\\.cargo\\bin;C:\\Program Files\\TortoiseSVN\\bin;D:\\Program Files\\TortoiseGit\\bin;D:\\Program Files\\Git\\cmd;C:\\Users\\litid\\AppData\\Roaming\\Python\\Scripts;D:\\Program Files (x86)\\Appium;D:\\Program Files (x86)\\Appium\\node_modules\\.bin;D:\\ProgramData\\nim\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.wlua;.lexe;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Win64) OpenSSL/1.1.0f PHP/7.1.9 Server at www.tedcms.li Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Win64) OpenSSL/1.1.0f PHP/7.1.9'
+    'SERVER_NAME' => 'www.tedcms.li'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/wamp/vhost/tedcms/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp/vhost/tedcms/frontend/web'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'D:/wamp/vhost/tedcms/frontend/web/index.php'
+    'REMOTE_PORT' => '54388'
+    'REDIRECT_URL' => '/main'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/main'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1541659653.637
+    'REQUEST_TIME' => 1541659653
+]
+2018-11-08 14:47:55 [127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2018-11-08 14:47:55 [127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: gii
+2018-11-08 14:47:55 [127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\gii\Module::bootstrap()
+2018-11-08 14:47:55 [127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => 'gii',
+    'match' => false,
+    'parent' => null,
+]
+2018-11-08 14:47:55 [127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => 'gii/<id:\\w+>',
+    'match' => false,
+    'parent' => null,
+]
+2018-11-08 14:47:55 [127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => 'gii/<controller:[\\w\\-]+>/<action:[\\w\\-]+>',
+    'match' => false,
+    'parent' => null,
+]
+2018-11-08 14:47:55 [127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2018-11-08 14:47:55 [127.0.0.1][-][-][trace][yii\web\Application::handleRequest] Route requested: ''
+2018-11-08 14:47:55 [127.0.0.1][-][-][trace][yii\redis\Connection::open] Opening redis DB connection: 127.0.0.1:6379, database=0
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:60
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:36
+    in D:\wamp\vhost\tedcms\frontend\controllers\BaseController.php:22
+2018-11-08 14:47:55 [127.0.0.1][-][-][trace][yii\redis\Connection::executeCommand] Executing Redis Command: AUTH
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:60
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:36
+    in D:\wamp\vhost\tedcms\frontend\controllers\BaseController.php:22
+2018-11-08 14:47:55 [127.0.0.1][-][-][trace][yii\redis\Connection::executeCommand] Executing Redis Command: SELECT
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:60
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:36
+    in D:\wamp\vhost\tedcms\frontend\controllers\BaseController.php:22
+2018-11-08 14:47:55 [127.0.0.1][-][-][trace][yii\redis\Connection::executeCommand] Executing Redis Command: GET
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:60
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:36
+    in D:\wamp\vhost\tedcms\frontend\controllers\BaseController.php:22
+2018-11-08 14:47:55 [127.0.0.1][-][-][trace][yii\base\Controller::runAction] Route to run: site/index
+2018-11-08 14:47:55 [127.0.0.1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: frontend\controllers\SiteController::actionIndex()
+2018-11-08 14:47:55 [127.0.0.1][-][-][info][yii\db\Command::query] select * from `tedcms`.`ted_users`
+    in D:\wamp\vhost\tedcms\common\models\core\ClsMysql.php:84
+    in D:\wamp\vhost\tedcms\frontend\controllers\SiteController.php:36
+2018-11-08 14:47:55 [127.0.0.1][-][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=127.0.0.1;dbname=tedcms
+    in D:\wamp\vhost\tedcms\common\models\core\ClsMysql.php:84
+    in D:\wamp\vhost\tedcms\frontend\controllers\SiteController.php:36
+2018-11-08 14:47:55 [127.0.0.1][-][-][profile begin][yii\db\Connection::open] Opening DB connection: mysql:host=127.0.0.1;dbname=tedcms
+    in D:\wamp\vhost\tedcms\common\models\core\ClsMysql.php:84
+    in D:\wamp\vhost\tedcms\frontend\controllers\SiteController.php:36
+2018-11-08 14:47:55 [127.0.0.1][-][-][profile end][yii\db\Connection::open] Opening DB connection: mysql:host=127.0.0.1;dbname=tedcms
+    in D:\wamp\vhost\tedcms\common\models\core\ClsMysql.php:84
+    in D:\wamp\vhost\tedcms\frontend\controllers\SiteController.php:36
+2018-11-08 14:47:55 [127.0.0.1][-][-][profile begin][yii\db\Command::query] select * from `tedcms`.`ted_users`
+    in D:\wamp\vhost\tedcms\common\models\core\ClsMysql.php:84
+    in D:\wamp\vhost\tedcms\frontend\controllers\SiteController.php:36
+2018-11-08 14:47:55 [127.0.0.1][-][-][profile end][yii\db\Command::query] select * from `tedcms`.`ted_users`
+    in D:\wamp\vhost\tedcms\common\models\core\ClsMysql.php:84
+    in D:\wamp\vhost\tedcms\frontend\controllers\SiteController.php:36
+2018-11-08 14:47:55 [127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: D:\wamp\vhost\tedcms\frontend\views\site\index.php
+    in D:\wamp\vhost\tedcms\frontend\controllers\SiteController.php:37
+2018-11-08 14:47:55 [127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: D:\wamp\vhost\tedcms\frontend\views\layouts\main.php
+    in D:\wamp\vhost\tedcms\frontend\controllers\SiteController.php:37
+2018-11-08 14:47:55 [127.0.0.1][-][-][trace][yii\redis\Connection::executeCommand] Executing Redis Command: SET
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:106
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:117
+2018-11-08 14:47:55 [127.0.0.1][-][-][trace][yii\redis\Connection::executeCommand] Executing Redis Command: EXPIRE
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:109
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:117
+2018-11-08 14:47:55 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'br9ot0evbfgrm83kd2k6oqbl08'
+    'TEDCMS' => 'br9ot0evbfgrm83kd2k6oqbl08'
+    '_csrf-frontend' => '0bf44dbe7e1be28437a1853d93389b30bba4f1285201976e5fca5908641bfbc6a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"¼®…Z/Íe¦T±” 2¦–3¡kOHoK[a‘D\";}'
+]
+
+$_SESSION = [
+    'login_error_times' => 0
+    'admin_name' => 'admin'
+    'action_list' => ''
+    'last_check' => '1541630354'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www.tedcms.li'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.9 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://www.tedcms.li/site/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=br9ot0evbfgrm83kd2k6oqbl08; TEDCMS=br9ot0evbfgrm83kd2k6oqbl08; _csrf-frontend=0bf44dbe7e1be28437a1853d93389b30bba4f1285201976e5fca5908641bfbc6a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%BC%AE%85Z%2F%10%CDe%18%A6T%B1%94+2%A6%963%A1%05%13kO%06HoK%08%5Ba%91D%22%3B%7D'
+    'PATH' => 'D:\\ProgramData\\Python27\\;D:\\ProgramData\\Python27\\Scripts;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Perl64\\site\\bin;C:\\Perl64\\bin;D:\\app\\litid\\product\\11.2.0\\dbhome_1\\bin;C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\redist\\intel64\\compiler;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Windows\\System32\\Wbem;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\NVIDIA Corporation\\PhysX\\Common;D:\\Program Files\\Redis\\;D:\\Go\\bin;C:\\sqlite;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;D:\\ProgramData\\nodejs\\;D:\\Program Files\\VisualSVN Server\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Yarn\\bin\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;D:\\wamp\\bin\\hadoop\\hadoop-2.7.1\\bin;C:\\Program Files\\Java\\jdk1.8.0_161\\bin;D:\\wamp\\bin\\storm\\apache_storm\\bin;D:\\java\\apache-maven-3.5.3\\bin;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\scala\\bin;C:\\Program Files (x86)\\Intel\\Intel(R) Manageme;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\sbt\\bin;C:\\grep\\bin;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Lua\\5.1;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Lua\\5.1\\clibs;C:\\MinGW\\bin;C:\\MinGW\\x86_64-w64-mingw32\\bin;C:\\Vim\\vim80;C:\\Program Files\\R\\R-3.4.3\\bin;C:\\Program Files\\Java\\commons-logging-1.2;C:\\Program Files\\Java\\spring-framework-5.0.5\\libs;C:\\Program Files\\Java\\apache-ant-1.10.3\\bin;D:\\Android\\NDK\\android-ndk-r16b;C:\\ProgramData\\chocolatey\\bin;C:\\MinGW\\curl-7.59.0-win64-mingw\\bin;D:\\HashiCorp\\Vagrant\\bin;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\DTS\\Binn\\;D:\\flutter\\bin;D:\\Android\\SDK\\tools;D:\\Android\\SDK\\platform-tools;D:\\tools\\dart-sdk\\bin;D:\\wamp\\bin\\php\\php7.1.9;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Users\\litid\\.cargo\\bin;C:\\Program Files\\TortoiseSVN\\bin;D:\\Program Files\\TortoiseGit\\bin;D:\\Program Files\\Git\\cmd;C:\\Users\\litid\\AppData\\Roaming\\Python\\Scripts;D:\\Program Files (x86)\\Appium;D:\\Program Files (x86)\\Appium\\node_modules\\.bin;D:\\ProgramData\\nim\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.wlua;.lexe;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Win64) OpenSSL/1.1.0f PHP/7.1.9 Server at www.tedcms.li Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Win64) OpenSSL/1.1.0f PHP/7.1.9'
+    'SERVER_NAME' => 'www.tedcms.li'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/wamp/vhost/tedcms/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp/vhost/tedcms/frontend/web'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'D:/wamp/vhost/tedcms/frontend/web/index.php'
+    'REMOTE_PORT' => '54419'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1541659675.804
+    'REQUEST_TIME' => 1541659675
+]
+2018-11-08 14:47:56 [127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2018-11-08 14:47:56 [127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: gii
+2018-11-08 14:47:56 [127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\gii\Module::bootstrap()
+2018-11-08 14:47:56 [127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => 'gii',
+    'match' => false,
+    'parent' => null,
+]
+2018-11-08 14:47:56 [127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => 'gii/<id:\\w+>',
+    'match' => false,
+    'parent' => null,
+]
+2018-11-08 14:47:56 [127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => 'gii/<controller:[\\w\\-]+>/<action:[\\w\\-]+>',
+    'match' => false,
+    'parent' => null,
+]
+2018-11-08 14:47:56 [127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2018-11-08 14:47:56 [127.0.0.1][-][-][trace][yii\web\Application::handleRequest] Route requested: 'main'
+2018-11-08 14:47:56 [127.0.0.1][-][-][trace][yii\redis\Connection::open] Opening redis DB connection: 127.0.0.1:6379, database=0
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:60
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:36
+    in D:\wamp\vhost\tedcms\frontend\controllers\BaseController.php:22
+2018-11-08 14:47:56 [127.0.0.1][-][-][trace][yii\redis\Connection::executeCommand] Executing Redis Command: AUTH
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:60
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:36
+    in D:\wamp\vhost\tedcms\frontend\controllers\BaseController.php:22
+2018-11-08 14:47:56 [127.0.0.1][-][-][trace][yii\redis\Connection::executeCommand] Executing Redis Command: SELECT
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:60
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:36
+    in D:\wamp\vhost\tedcms\frontend\controllers\BaseController.php:22
+2018-11-08 14:47:56 [127.0.0.1][-][-][trace][yii\redis\Connection::executeCommand] Executing Redis Command: GET
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:60
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:36
+    in D:\wamp\vhost\tedcms\frontend\controllers\BaseController.php:22
+2018-11-08 14:47:56 [127.0.0.1][-][-][trace][yii\base\Controller::runAction] Route to run: main/index
+2018-11-08 14:47:56 [127.0.0.1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: frontend\controllers\MainController::actionIndex()
+2018-11-08 14:47:56 [127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: D:\wamp\vhost\tedcms\frontend\views\main\main.php
+    in D:\wamp\vhost\tedcms\frontend\controllers\MainController.php:12
+2018-11-08 14:47:56 [127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: D:\wamp\vhost\tedcms\frontend\views\layouts\main.php
+    in D:\wamp\vhost\tedcms\frontend\controllers\MainController.php:12
+2018-11-08 14:47:56 [127.0.0.1][-][-][trace][yii\redis\Connection::executeCommand] Executing Redis Command: SET
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:106
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:117
+2018-11-08 14:47:56 [127.0.0.1][-][-][trace][yii\redis\Connection::executeCommand] Executing Redis Command: EXPIRE
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:109
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:117
+2018-11-08 14:47:56 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'br9ot0evbfgrm83kd2k6oqbl08'
+    'TEDCMS' => 'br9ot0evbfgrm83kd2k6oqbl08'
+    '_csrf-frontend' => '583b5ab82a480907d284b7f3c73cb55d682fcb38f342be5f626c4adff8240b3aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ZǜÐ4w¹P;H
+ӟ׿«åclOvU×435*–ʩ\";}'
+]
+
+$_SESSION = [
+    'login_error_times' => 0
+    'admin_name' => 'admin'
+    'action_list' => ''
+    'last_check' => '1541630354'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'www.tedcms.li'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.9 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://www.tedcms.li/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=br9ot0evbfgrm83kd2k6oqbl08; TEDCMS=br9ot0evbfgrm83kd2k6oqbl08; _csrf-frontend=583b5ab82a480907d284b7f3c73cb55d682fcb38f342be5f626c4adff8240b3aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%12Z%C7%9C%D04w%B9P%05%3BH%0A%D3%9F%D7%BF%AB%E5clOvU%D7435%2A%96%CA%A9%22%3B%7D'
+    'PATH' => 'D:\\ProgramData\\Python27\\;D:\\ProgramData\\Python27\\Scripts;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Perl64\\site\\bin;C:\\Perl64\\bin;D:\\app\\litid\\product\\11.2.0\\dbhome_1\\bin;C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\redist\\intel64\\compiler;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Windows\\System32\\Wbem;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\NVIDIA Corporation\\PhysX\\Common;D:\\Program Files\\Redis\\;D:\\Go\\bin;C:\\sqlite;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;D:\\ProgramData\\nodejs\\;D:\\Program Files\\VisualSVN Server\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Yarn\\bin\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;D:\\wamp\\bin\\hadoop\\hadoop-2.7.1\\bin;C:\\Program Files\\Java\\jdk1.8.0_161\\bin;D:\\wamp\\bin\\storm\\apache_storm\\bin;D:\\java\\apache-maven-3.5.3\\bin;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\scala\\bin;C:\\Program Files (x86)\\Intel\\Intel(R) Manageme;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\sbt\\bin;C:\\grep\\bin;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Lua\\5.1;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Lua\\5.1\\clibs;C:\\MinGW\\bin;C:\\MinGW\\x86_64-w64-mingw32\\bin;C:\\Vim\\vim80;C:\\Program Files\\R\\R-3.4.3\\bin;C:\\Program Files\\Java\\commons-logging-1.2;C:\\Program Files\\Java\\spring-framework-5.0.5\\libs;C:\\Program Files\\Java\\apache-ant-1.10.3\\bin;D:\\Android\\NDK\\android-ndk-r16b;C:\\ProgramData\\chocolatey\\bin;C:\\MinGW\\curl-7.59.0-win64-mingw\\bin;D:\\HashiCorp\\Vagrant\\bin;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\DTS\\Binn\\;D:\\flutter\\bin;D:\\Android\\SDK\\tools;D:\\Android\\SDK\\platform-tools;D:\\tools\\dart-sdk\\bin;D:\\wamp\\bin\\php\\php7.1.9;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Users\\litid\\.cargo\\bin;C:\\Program Files\\TortoiseSVN\\bin;D:\\Program Files\\TortoiseGit\\bin;D:\\Program Files\\Git\\cmd;C:\\Users\\litid\\AppData\\Roaming\\Python\\Scripts;D:\\Program Files (x86)\\Appium;D:\\Program Files (x86)\\Appium\\node_modules\\.bin;D:\\ProgramData\\nim\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.wlua;.lexe;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Win64) OpenSSL/1.1.0f PHP/7.1.9 Server at www.tedcms.li Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Win64) OpenSSL/1.1.0f PHP/7.1.9'
+    'SERVER_NAME' => 'www.tedcms.li'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/wamp/vhost/tedcms/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp/vhost/tedcms/frontend/web'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'D:/wamp/vhost/tedcms/frontend/web/index.php'
+    'REMOTE_PORT' => '54423'
+    'REDIRECT_URL' => '/main'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/main'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1541659676.069
+    'REQUEST_TIME' => 1541659676
+]
+2018-11-08 14:48:08 [127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2018-11-08 14:48:08 [127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: gii
+2018-11-08 14:48:08 [127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\gii\Module::bootstrap()
+2018-11-08 14:48:08 [127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => 'gii',
+    'match' => false,
+    'parent' => null,
+]
+2018-11-08 14:48:08 [127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => 'gii/<id:\\w+>',
+    'match' => false,
+    'parent' => null,
+]
+2018-11-08 14:48:08 [127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => 'gii/<controller:[\\w\\-]+>/<action:[\\w\\-]+>',
+    'match' => false,
+    'parent' => null,
+]
+2018-11-08 14:48:08 [127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2018-11-08 14:48:08 [127.0.0.1][-][-][trace][yii\web\Application::handleRequest] Route requested: 'main/results'
+2018-11-08 14:48:08 [127.0.0.1][-][-][trace][yii\redis\Connection::open] Opening redis DB connection: 127.0.0.1:6379, database=0
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:60
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:36
+    in D:\wamp\vhost\tedcms\frontend\controllers\BaseController.php:22
+2018-11-08 14:48:08 [127.0.0.1][-][-][trace][yii\redis\Connection::executeCommand] Executing Redis Command: AUTH
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:60
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:36
+    in D:\wamp\vhost\tedcms\frontend\controllers\BaseController.php:22
+2018-11-08 14:48:08 [127.0.0.1][-][-][trace][yii\redis\Connection::executeCommand] Executing Redis Command: SELECT
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:60
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:36
+    in D:\wamp\vhost\tedcms\frontend\controllers\BaseController.php:22
+2018-11-08 14:48:08 [127.0.0.1][-][-][trace][yii\redis\Connection::executeCommand] Executing Redis Command: GET
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:60
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:36
+    in D:\wamp\vhost\tedcms\frontend\controllers\BaseController.php:22
+2018-11-08 14:48:08 [127.0.0.1][-][-][trace][yii\base\Controller::runAction] Route to run: main/results
+2018-11-08 14:48:08 [127.0.0.1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: frontend\controllers\MainController::actionResults()
+2018-11-08 14:48:08 [127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: D:\wamp\vhost\tedcms\frontend\views\main\results.php
+    in D:\wamp\vhost\tedcms\frontend\controllers\MainController.php:15
+2018-11-08 14:48:08 [127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: D:\wamp\vhost\tedcms\frontend\views\layouts\main.php
+    in D:\wamp\vhost\tedcms\frontend\controllers\MainController.php:15
+2018-11-08 14:48:08 [127.0.0.1][-][-][trace][yii\redis\Connection::executeCommand] Executing Redis Command: SET
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:106
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:117
+2018-11-08 14:48:08 [127.0.0.1][-][-][trace][yii\redis\Connection::executeCommand] Executing Redis Command: EXPIRE
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:109
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:117
+2018-11-08 14:48:08 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'br9ot0evbfgrm83kd2k6oqbl08'
+    'TEDCMS' => 'br9ot0evbfgrm83kd2k6oqbl08'
+    '_csrf-frontend' => 'dc98d2a275710e9552ea0cf6d1d21e15b035288dce8b8522cda5550b2cd1c62ea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"Þ-›˜Ej`ƒ›Ýߩՙ¼˫s…;@ßär)S“Յ\";}'
+]
+
+$_SESSION = [
+    'login_error_times' => 0
+    'admin_name' => 'admin'
+    'action_list' => ''
+    'last_check' => '1541630354'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'www.tedcms.li'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.9 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://www.tedcms.li/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=br9ot0evbfgrm83kd2k6oqbl08; TEDCMS=br9ot0evbfgrm83kd2k6oqbl08; _csrf-frontend=dc98d2a275710e9552ea0cf6d1d21e15b035288dce8b8522cda5550b2cd1c62ea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%DE-%9B%13%98Ej%60%83%9B%DD%DF%A9%D5%99%BC%CB%ABs%85%3B%40%DF%E4%10%13r%29S%93%D5%85%22%3B%7D'
+    'PATH' => 'D:\\ProgramData\\Python27\\;D:\\ProgramData\\Python27\\Scripts;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Perl64\\site\\bin;C:\\Perl64\\bin;D:\\app\\litid\\product\\11.2.0\\dbhome_1\\bin;C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\redist\\intel64\\compiler;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Windows\\System32\\Wbem;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\NVIDIA Corporation\\PhysX\\Common;D:\\Program Files\\Redis\\;D:\\Go\\bin;C:\\sqlite;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;D:\\ProgramData\\nodejs\\;D:\\Program Files\\VisualSVN Server\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Yarn\\bin\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;D:\\wamp\\bin\\hadoop\\hadoop-2.7.1\\bin;C:\\Program Files\\Java\\jdk1.8.0_161\\bin;D:\\wamp\\bin\\storm\\apache_storm\\bin;D:\\java\\apache-maven-3.5.3\\bin;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\scala\\bin;C:\\Program Files (x86)\\Intel\\Intel(R) Manageme;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\sbt\\bin;C:\\grep\\bin;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Lua\\5.1;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Lua\\5.1\\clibs;C:\\MinGW\\bin;C:\\MinGW\\x86_64-w64-mingw32\\bin;C:\\Vim\\vim80;C:\\Program Files\\R\\R-3.4.3\\bin;C:\\Program Files\\Java\\commons-logging-1.2;C:\\Program Files\\Java\\spring-framework-5.0.5\\libs;C:\\Program Files\\Java\\apache-ant-1.10.3\\bin;D:\\Android\\NDK\\android-ndk-r16b;C:\\ProgramData\\chocolatey\\bin;C:\\MinGW\\curl-7.59.0-win64-mingw\\bin;D:\\HashiCorp\\Vagrant\\bin;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\DTS\\Binn\\;D:\\flutter\\bin;D:\\Android\\SDK\\tools;D:\\Android\\SDK\\platform-tools;D:\\tools\\dart-sdk\\bin;D:\\wamp\\bin\\php\\php7.1.9;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Users\\litid\\.cargo\\bin;C:\\Program Files\\TortoiseSVN\\bin;D:\\Program Files\\TortoiseGit\\bin;D:\\Program Files\\Git\\cmd;C:\\Users\\litid\\AppData\\Roaming\\Python\\Scripts;D:\\Program Files (x86)\\Appium;D:\\Program Files (x86)\\Appium\\node_modules\\.bin;D:\\ProgramData\\nim\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.wlua;.lexe;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Win64) OpenSSL/1.1.0f PHP/7.1.9 Server at www.tedcms.li Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Win64) OpenSSL/1.1.0f PHP/7.1.9'
+    'SERVER_NAME' => 'www.tedcms.li'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/wamp/vhost/tedcms/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp/vhost/tedcms/frontend/web'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'D:/wamp/vhost/tedcms/frontend/web/index.php'
+    'REMOTE_PORT' => '54443'
+    'REDIRECT_URL' => '/main/results'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/main/results'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1541659688.783
+    'REQUEST_TIME' => 1541659688
+]
+2018-11-08 14:49:18 [127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2018-11-08 14:49:18 [127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: gii
+2018-11-08 14:49:18 [127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\gii\Module::bootstrap()
+2018-11-08 14:49:18 [127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => 'gii',
+    'match' => false,
+    'parent' => null,
+]
+2018-11-08 14:49:18 [127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => 'gii/<id:\\w+>',
+    'match' => false,
+    'parent' => null,
+]
+2018-11-08 14:49:18 [127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => 'gii/<controller:[\\w\\-]+>/<action:[\\w\\-]+>',
+    'match' => false,
+    'parent' => null,
+]
+2018-11-08 14:49:18 [127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2018-11-08 14:49:18 [127.0.0.1][-][-][trace][yii\web\Application::handleRequest] Route requested: ''
+2018-11-08 14:49:18 [127.0.0.1][-][-][trace][yii\redis\Connection::open] Opening redis DB connection: 127.0.0.1:6379, database=0
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:60
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:36
+    in D:\wamp\vhost\tedcms\frontend\controllers\BaseController.php:22
+2018-11-08 14:49:18 [127.0.0.1][-][-][trace][yii\redis\Connection::executeCommand] Executing Redis Command: AUTH
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:60
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:36
+    in D:\wamp\vhost\tedcms\frontend\controllers\BaseController.php:22
+2018-11-08 14:49:18 [127.0.0.1][-][-][trace][yii\redis\Connection::executeCommand] Executing Redis Command: SELECT
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:60
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:36
+    in D:\wamp\vhost\tedcms\frontend\controllers\BaseController.php:22
+2018-11-08 14:49:18 [127.0.0.1][-][-][trace][yii\redis\Connection::executeCommand] Executing Redis Command: GET
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:60
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:36
+    in D:\wamp\vhost\tedcms\frontend\controllers\BaseController.php:22
+2018-11-08 14:49:18 [127.0.0.1][-][-][trace][yii\base\Controller::runAction] Route to run: site/index
+2018-11-08 14:49:18 [127.0.0.1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: frontend\controllers\SiteController::actionIndex()
+2018-11-08 14:49:18 [127.0.0.1][-][-][info][yii\db\Command::query] select * from `tedcms`.`ted_users`
+    in D:\wamp\vhost\tedcms\common\models\core\ClsMysql.php:84
+    in D:\wamp\vhost\tedcms\frontend\controllers\SiteController.php:36
+2018-11-08 14:49:18 [127.0.0.1][-][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=127.0.0.1;dbname=tedcms
+    in D:\wamp\vhost\tedcms\common\models\core\ClsMysql.php:84
+    in D:\wamp\vhost\tedcms\frontend\controllers\SiteController.php:36
+2018-11-08 14:49:18 [127.0.0.1][-][-][profile begin][yii\db\Connection::open] Opening DB connection: mysql:host=127.0.0.1;dbname=tedcms
+    in D:\wamp\vhost\tedcms\common\models\core\ClsMysql.php:84
+    in D:\wamp\vhost\tedcms\frontend\controllers\SiteController.php:36
+2018-11-08 14:49:18 [127.0.0.1][-][-][profile end][yii\db\Connection::open] Opening DB connection: mysql:host=127.0.0.1;dbname=tedcms
+    in D:\wamp\vhost\tedcms\common\models\core\ClsMysql.php:84
+    in D:\wamp\vhost\tedcms\frontend\controllers\SiteController.php:36
+2018-11-08 14:49:18 [127.0.0.1][-][-][profile begin][yii\db\Command::query] select * from `tedcms`.`ted_users`
+    in D:\wamp\vhost\tedcms\common\models\core\ClsMysql.php:84
+    in D:\wamp\vhost\tedcms\frontend\controllers\SiteController.php:36
+2018-11-08 14:49:18 [127.0.0.1][-][-][profile end][yii\db\Command::query] select * from `tedcms`.`ted_users`
+    in D:\wamp\vhost\tedcms\common\models\core\ClsMysql.php:84
+    in D:\wamp\vhost\tedcms\frontend\controllers\SiteController.php:36
+2018-11-08 14:49:18 [127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: D:\wamp\vhost\tedcms\frontend\views\site\index.php
+    in D:\wamp\vhost\tedcms\frontend\controllers\SiteController.php:37
+2018-11-08 14:49:18 [127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: D:\wamp\vhost\tedcms\frontend\views\layouts\main.php
+    in D:\wamp\vhost\tedcms\frontend\controllers\SiteController.php:37
+2018-11-08 14:49:18 [127.0.0.1][-][-][trace][yii\redis\Connection::executeCommand] Executing Redis Command: SET
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:106
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:117
+2018-11-08 14:49:18 [127.0.0.1][-][-][trace][yii\redis\Connection::executeCommand] Executing Redis Command: EXPIRE
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:109
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:117
+2018-11-08 14:49:18 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'br9ot0evbfgrm83kd2k6oqbl08'
+    'TEDCMS' => 'br9ot0evbfgrm83kd2k6oqbl08'
+    '_csrf-frontend' => '0f4c9a825fd86978e1f2080c114ddeb4b36727928b5094f8a7eb3eccb3d85b8ba:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"¢@Z5|a—CK§…JŸŒ™ƒ6•ãút;Ì\\\";}'
+]
+
+$_SESSION = [
+    'login_error_times' => 0
+    'admin_name' => 'admin'
+    'action_list' => ''
+    'last_check' => '1541630354'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www.tedcms.li'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.9 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://www.tedcms.li/site/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=br9ot0evbfgrm83kd2k6oqbl08; TEDCMS=br9ot0evbfgrm83kd2k6oqbl08; _csrf-frontend=0f4c9a825fd86978e1f2080c114ddeb4b36727928b5094f8a7eb3eccb3d85b8ba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%18%A2%0C%40%02Z5%0F%7Ca%97CK%A7%85J%9F%8C%8D%99%04%836%95%1B%E3%FAt%8D%3B%CC%5C%22%3B%7D'
+    'PATH' => 'D:\\ProgramData\\Python27\\;D:\\ProgramData\\Python27\\Scripts;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Perl64\\site\\bin;C:\\Perl64\\bin;D:\\app\\litid\\product\\11.2.0\\dbhome_1\\bin;C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\redist\\intel64\\compiler;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Windows\\System32\\Wbem;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\NVIDIA Corporation\\PhysX\\Common;D:\\Program Files\\Redis\\;D:\\Go\\bin;C:\\sqlite;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;D:\\ProgramData\\nodejs\\;D:\\Program Files\\VisualSVN Server\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Yarn\\bin\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;D:\\wamp\\bin\\hadoop\\hadoop-2.7.1\\bin;C:\\Program Files\\Java\\jdk1.8.0_161\\bin;D:\\wamp\\bin\\storm\\apache_storm\\bin;D:\\java\\apache-maven-3.5.3\\bin;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\scala\\bin;C:\\Program Files (x86)\\Intel\\Intel(R) Manageme;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\sbt\\bin;C:\\grep\\bin;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Lua\\5.1;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Lua\\5.1\\clibs;C:\\MinGW\\bin;C:\\MinGW\\x86_64-w64-mingw32\\bin;C:\\Vim\\vim80;C:\\Program Files\\R\\R-3.4.3\\bin;C:\\Program Files\\Java\\commons-logging-1.2;C:\\Program Files\\Java\\spring-framework-5.0.5\\libs;C:\\Program Files\\Java\\apache-ant-1.10.3\\bin;D:\\Android\\NDK\\android-ndk-r16b;C:\\ProgramData\\chocolatey\\bin;C:\\MinGW\\curl-7.59.0-win64-mingw\\bin;D:\\HashiCorp\\Vagrant\\bin;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\DTS\\Binn\\;D:\\flutter\\bin;D:\\Android\\SDK\\tools;D:\\Android\\SDK\\platform-tools;D:\\tools\\dart-sdk\\bin;D:\\wamp\\bin\\php\\php7.1.9;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Users\\litid\\.cargo\\bin;C:\\Program Files\\TortoiseSVN\\bin;D:\\Program Files\\TortoiseGit\\bin;D:\\Program Files\\Git\\cmd;C:\\Users\\litid\\AppData\\Roaming\\Python\\Scripts;D:\\Program Files (x86)\\Appium;D:\\Program Files (x86)\\Appium\\node_modules\\.bin;D:\\ProgramData\\nim\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.wlua;.lexe;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Win64) OpenSSL/1.1.0f PHP/7.1.9 Server at www.tedcms.li Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Win64) OpenSSL/1.1.0f PHP/7.1.9'
+    'SERVER_NAME' => 'www.tedcms.li'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/wamp/vhost/tedcms/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp/vhost/tedcms/frontend/web'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'D:/wamp/vhost/tedcms/frontend/web/index.php'
+    'REMOTE_PORT' => '54537'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1541659758.791
+    'REQUEST_TIME' => 1541659758
+]
+2018-11-08 14:49:19 [127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2018-11-08 14:49:19 [127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: gii
+2018-11-08 14:49:19 [127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\gii\Module::bootstrap()
+2018-11-08 14:49:19 [127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => 'gii',
+    'match' => false,
+    'parent' => null,
+]
+2018-11-08 14:49:19 [127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => 'gii/<id:\\w+>',
+    'match' => false,
+    'parent' => null,
+]
+2018-11-08 14:49:19 [127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => 'gii/<controller:[\\w\\-]+>/<action:[\\w\\-]+>',
+    'match' => false,
+    'parent' => null,
+]
+2018-11-08 14:49:19 [127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2018-11-08 14:49:19 [127.0.0.1][-][-][trace][yii\web\Application::handleRequest] Route requested: 'main'
+2018-11-08 14:49:19 [127.0.0.1][-][-][trace][yii\redis\Connection::open] Opening redis DB connection: 127.0.0.1:6379, database=0
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:60
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:36
+    in D:\wamp\vhost\tedcms\frontend\controllers\BaseController.php:22
+2018-11-08 14:49:19 [127.0.0.1][-][-][trace][yii\redis\Connection::executeCommand] Executing Redis Command: AUTH
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:60
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:36
+    in D:\wamp\vhost\tedcms\frontend\controllers\BaseController.php:22
+2018-11-08 14:49:19 [127.0.0.1][-][-][trace][yii\redis\Connection::executeCommand] Executing Redis Command: SELECT
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:60
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:36
+    in D:\wamp\vhost\tedcms\frontend\controllers\BaseController.php:22
+2018-11-08 14:49:19 [127.0.0.1][-][-][trace][yii\redis\Connection::executeCommand] Executing Redis Command: GET
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:60
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:36
+    in D:\wamp\vhost\tedcms\frontend\controllers\BaseController.php:22
+2018-11-08 14:49:19 [127.0.0.1][-][-][trace][yii\base\Controller::runAction] Route to run: main/index
+2018-11-08 14:49:19 [127.0.0.1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: frontend\controllers\MainController::actionIndex()
+2018-11-08 14:49:19 [127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: D:\wamp\vhost\tedcms\frontend\views\main\main.php
+    in D:\wamp\vhost\tedcms\frontend\controllers\MainController.php:12
+2018-11-08 14:49:19 [127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: D:\wamp\vhost\tedcms\frontend\views\layouts\main.php
+    in D:\wamp\vhost\tedcms\frontend\controllers\MainController.php:12
+2018-11-08 14:49:19 [127.0.0.1][-][-][trace][yii\redis\Connection::executeCommand] Executing Redis Command: SET
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:106
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:117
+2018-11-08 14:49:19 [127.0.0.1][-][-][trace][yii\redis\Connection::executeCommand] Executing Redis Command: EXPIRE
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:109
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:117
+2018-11-08 14:49:19 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'br9ot0evbfgrm83kd2k6oqbl08'
+    'TEDCMS' => 'br9ot0evbfgrm83kd2k6oqbl08'
+    '_csrf-frontend' => 'b30948cee2ab819b6bebe223ae47661e641669569d6e837894d2e8cf89d81ef8a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"‚ÑÈ@‘ºWÔ3Nµ:g`¸”S8Dl2Äcû5P¥`æ\";}'
+]
+
+$_SESSION = [
+    'login_error_times' => 0
+    'admin_name' => 'admin'
+    'action_list' => ''
+    'last_check' => '1541630354'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'www.tedcms.li'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.9 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://www.tedcms.li/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=br9ot0evbfgrm83kd2k6oqbl08; TEDCMS=br9ot0evbfgrm83kd2k6oqbl08; _csrf-frontend=b30948cee2ab819b6bebe223ae47661e641669569d6e837894d2e8cf89d81ef8a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%82%D1%01%C8%40%91%BAW%D4%073N%B5%3Ag%60%B8%94S8Dl2%C4c%FB5P%A5%60%E6%17%22%3B%7D'
+    'PATH' => 'D:\\ProgramData\\Python27\\;D:\\ProgramData\\Python27\\Scripts;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Perl64\\site\\bin;C:\\Perl64\\bin;D:\\app\\litid\\product\\11.2.0\\dbhome_1\\bin;C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\redist\\intel64\\compiler;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Windows\\System32\\Wbem;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\NVIDIA Corporation\\PhysX\\Common;D:\\Program Files\\Redis\\;D:\\Go\\bin;C:\\sqlite;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;D:\\ProgramData\\nodejs\\;D:\\Program Files\\VisualSVN Server\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Yarn\\bin\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;D:\\wamp\\bin\\hadoop\\hadoop-2.7.1\\bin;C:\\Program Files\\Java\\jdk1.8.0_161\\bin;D:\\wamp\\bin\\storm\\apache_storm\\bin;D:\\java\\apache-maven-3.5.3\\bin;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\scala\\bin;C:\\Program Files (x86)\\Intel\\Intel(R) Manageme;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\sbt\\bin;C:\\grep\\bin;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Lua\\5.1;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Lua\\5.1\\clibs;C:\\MinGW\\bin;C:\\MinGW\\x86_64-w64-mingw32\\bin;C:\\Vim\\vim80;C:\\Program Files\\R\\R-3.4.3\\bin;C:\\Program Files\\Java\\commons-logging-1.2;C:\\Program Files\\Java\\spring-framework-5.0.5\\libs;C:\\Program Files\\Java\\apache-ant-1.10.3\\bin;D:\\Android\\NDK\\android-ndk-r16b;C:\\ProgramData\\chocolatey\\bin;C:\\MinGW\\curl-7.59.0-win64-mingw\\bin;D:\\HashiCorp\\Vagrant\\bin;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\DTS\\Binn\\;D:\\flutter\\bin;D:\\Android\\SDK\\tools;D:\\Android\\SDK\\platform-tools;D:\\tools\\dart-sdk\\bin;D:\\wamp\\bin\\php\\php7.1.9;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Users\\litid\\.cargo\\bin;C:\\Program Files\\TortoiseSVN\\bin;D:\\Program Files\\TortoiseGit\\bin;D:\\Program Files\\Git\\cmd;C:\\Users\\litid\\AppData\\Roaming\\Python\\Scripts;D:\\Program Files (x86)\\Appium;D:\\Program Files (x86)\\Appium\\node_modules\\.bin;D:\\ProgramData\\nim\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.wlua;.lexe;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Win64) OpenSSL/1.1.0f PHP/7.1.9 Server at www.tedcms.li Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Win64) OpenSSL/1.1.0f PHP/7.1.9'
+    'SERVER_NAME' => 'www.tedcms.li'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/wamp/vhost/tedcms/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp/vhost/tedcms/frontend/web'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'D:/wamp/vhost/tedcms/frontend/web/index.php'
+    'REMOTE_PORT' => '54541'
+    'REDIRECT_URL' => '/main'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/main'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1541659759.069
+    'REQUEST_TIME' => 1541659759
+]
+2018-11-08 14:49:24 [127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2018-11-08 14:49:24 [127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: gii
+2018-11-08 14:49:24 [127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\gii\Module::bootstrap()
+2018-11-08 14:49:24 [127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => 'gii',
+    'match' => false,
+    'parent' => null,
+]
+2018-11-08 14:49:24 [127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => 'gii/<id:\\w+>',
+    'match' => false,
+    'parent' => null,
+]
+2018-11-08 14:49:24 [127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => 'gii/<controller:[\\w\\-]+>/<action:[\\w\\-]+>',
+    'match' => false,
+    'parent' => null,
+]
+2018-11-08 14:49:24 [127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2018-11-08 14:49:24 [127.0.0.1][-][-][trace][yii\web\Application::handleRequest] Route requested: 'main/results'
+2018-11-08 14:49:24 [127.0.0.1][-][-][trace][yii\redis\Connection::open] Opening redis DB connection: 127.0.0.1:6379, database=0
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:60
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:36
+    in D:\wamp\vhost\tedcms\frontend\controllers\BaseController.php:22
+2018-11-08 14:49:24 [127.0.0.1][-][-][trace][yii\redis\Connection::executeCommand] Executing Redis Command: AUTH
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:60
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:36
+    in D:\wamp\vhost\tedcms\frontend\controllers\BaseController.php:22
+2018-11-08 14:49:24 [127.0.0.1][-][-][trace][yii\redis\Connection::executeCommand] Executing Redis Command: SELECT
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:60
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:36
+    in D:\wamp\vhost\tedcms\frontend\controllers\BaseController.php:22
+2018-11-08 14:49:24 [127.0.0.1][-][-][trace][yii\redis\Connection::executeCommand] Executing Redis Command: GET
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:60
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:36
+    in D:\wamp\vhost\tedcms\frontend\controllers\BaseController.php:22
+2018-11-08 14:49:24 [127.0.0.1][-][-][trace][yii\base\Controller::runAction] Route to run: main/results
+2018-11-08 14:49:24 [127.0.0.1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: frontend\controllers\MainController::actionResults()
+2018-11-08 14:49:24 [127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: D:\wamp\vhost\tedcms\frontend\views\main\results.php
+    in D:\wamp\vhost\tedcms\frontend\controllers\MainController.php:15
+2018-11-08 14:49:24 [127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: D:\wamp\vhost\tedcms\frontend\views\layouts\main.php
+    in D:\wamp\vhost\tedcms\frontend\controllers\MainController.php:15
+2018-11-08 14:49:24 [127.0.0.1][-][-][trace][yii\redis\Connection::executeCommand] Executing Redis Command: SET
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:106
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:117
+2018-11-08 14:49:24 [127.0.0.1][-][-][trace][yii\redis\Connection::executeCommand] Executing Redis Command: EXPIRE
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:109
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:117
+2018-11-08 14:49:24 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'br9ot0evbfgrm83kd2k6oqbl08'
+    'TEDCMS' => 'br9ot0evbfgrm83kd2k6oqbl08'
+    '_csrf-frontend' => 'e80d590c59874afdd1f03e26c59a5a4033d505e1a4984266385080236e122a4aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"Eóž£¯v@p¢2i˜]ëMV\\çbCÚEœOPŸDä\";}'
+]
+
+$_SESSION = [
+    'login_error_times' => 0
+    'admin_name' => 'admin'
+    'action_list' => ''
+    'last_check' => '1541630354'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'www.tedcms.li'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.9 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://www.tedcms.li/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=br9ot0evbfgrm83kd2k6oqbl08; TEDCMS=br9ot0evbfgrm83kd2k6oqbl08; _csrf-frontend=e80d590c59874afdd1f03e26c59a5a4033d505e1a4984266385080236e122a4aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22E%F3%9E%1B%A3%AFv%40p%A22%8Fi%98%12%5D%EBMV%5C%E7bC%DAE%9CO%14P%9FD%E4%22%3B%7D'
+    'PATH' => 'D:\\ProgramData\\Python27\\;D:\\ProgramData\\Python27\\Scripts;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Perl64\\site\\bin;C:\\Perl64\\bin;D:\\app\\litid\\product\\11.2.0\\dbhome_1\\bin;C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\redist\\intel64\\compiler;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Windows\\System32\\Wbem;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\NVIDIA Corporation\\PhysX\\Common;D:\\Program Files\\Redis\\;D:\\Go\\bin;C:\\sqlite;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;D:\\ProgramData\\nodejs\\;D:\\Program Files\\VisualSVN Server\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Yarn\\bin\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;D:\\wamp\\bin\\hadoop\\hadoop-2.7.1\\bin;C:\\Program Files\\Java\\jdk1.8.0_161\\bin;D:\\wamp\\bin\\storm\\apache_storm\\bin;D:\\java\\apache-maven-3.5.3\\bin;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\scala\\bin;C:\\Program Files (x86)\\Intel\\Intel(R) Manageme;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\sbt\\bin;C:\\grep\\bin;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Lua\\5.1;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Lua\\5.1\\clibs;C:\\MinGW\\bin;C:\\MinGW\\x86_64-w64-mingw32\\bin;C:\\Vim\\vim80;C:\\Program Files\\R\\R-3.4.3\\bin;C:\\Program Files\\Java\\commons-logging-1.2;C:\\Program Files\\Java\\spring-framework-5.0.5\\libs;C:\\Program Files\\Java\\apache-ant-1.10.3\\bin;D:\\Android\\NDK\\android-ndk-r16b;C:\\ProgramData\\chocolatey\\bin;C:\\MinGW\\curl-7.59.0-win64-mingw\\bin;D:\\HashiCorp\\Vagrant\\bin;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\DTS\\Binn\\;D:\\flutter\\bin;D:\\Android\\SDK\\tools;D:\\Android\\SDK\\platform-tools;D:\\tools\\dart-sdk\\bin;D:\\wamp\\bin\\php\\php7.1.9;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Users\\litid\\.cargo\\bin;C:\\Program Files\\TortoiseSVN\\bin;D:\\Program Files\\TortoiseGit\\bin;D:\\Program Files\\Git\\cmd;C:\\Users\\litid\\AppData\\Roaming\\Python\\Scripts;D:\\Program Files (x86)\\Appium;D:\\Program Files (x86)\\Appium\\node_modules\\.bin;D:\\ProgramData\\nim\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.wlua;.lexe;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Win64) OpenSSL/1.1.0f PHP/7.1.9 Server at www.tedcms.li Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Win64) OpenSSL/1.1.0f PHP/7.1.9'
+    'SERVER_NAME' => 'www.tedcms.li'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/wamp/vhost/tedcms/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp/vhost/tedcms/frontend/web'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'D:/wamp/vhost/tedcms/frontend/web/index.php'
+    'REMOTE_PORT' => '54541'
+    'REDIRECT_URL' => '/main/results'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/main/results'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1541659764.467
+    'REQUEST_TIME' => 1541659764
+]
+2018-11-08 14:50:44 [127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2018-11-08 14:50:44 [127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: gii
+2018-11-08 14:50:44 [127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\gii\Module::bootstrap()
+2018-11-08 14:50:44 [127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => 'gii',
+    'match' => false,
+    'parent' => null,
+]
+2018-11-08 14:50:44 [127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => 'gii/<id:\\w+>',
+    'match' => false,
+    'parent' => null,
+]
+2018-11-08 14:50:44 [127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => 'gii/<controller:[\\w\\-]+>/<action:[\\w\\-]+>',
+    'match' => false,
+    'parent' => null,
+]
+2018-11-08 14:50:44 [127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2018-11-08 14:50:44 [127.0.0.1][-][-][trace][yii\web\Application::handleRequest] Route requested: ''
+2018-11-08 14:50:44 [127.0.0.1][-][-][trace][yii\redis\Connection::open] Opening redis DB connection: 127.0.0.1:6379, database=0
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:60
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:36
+    in D:\wamp\vhost\tedcms\frontend\controllers\BaseController.php:22
+2018-11-08 14:50:44 [127.0.0.1][-][-][trace][yii\redis\Connection::executeCommand] Executing Redis Command: AUTH
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:60
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:36
+    in D:\wamp\vhost\tedcms\frontend\controllers\BaseController.php:22
+2018-11-08 14:50:44 [127.0.0.1][-][-][trace][yii\redis\Connection::executeCommand] Executing Redis Command: SELECT
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:60
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:36
+    in D:\wamp\vhost\tedcms\frontend\controllers\BaseController.php:22
+2018-11-08 14:50:44 [127.0.0.1][-][-][trace][yii\redis\Connection::executeCommand] Executing Redis Command: GET
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:60
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:36
+    in D:\wamp\vhost\tedcms\frontend\controllers\BaseController.php:22
+2018-11-08 14:50:44 [127.0.0.1][-][-][trace][yii\base\Controller::runAction] Route to run: site/index
+2018-11-08 14:50:44 [127.0.0.1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: frontend\controllers\SiteController::actionIndex()
+2018-11-08 14:50:44 [127.0.0.1][-][-][info][yii\db\Command::query] select * from `tedcms`.`ted_users`
+    in D:\wamp\vhost\tedcms\common\models\core\ClsMysql.php:84
+    in D:\wamp\vhost\tedcms\frontend\controllers\SiteController.php:36
+2018-11-08 14:50:44 [127.0.0.1][-][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=127.0.0.1;dbname=tedcms
+    in D:\wamp\vhost\tedcms\common\models\core\ClsMysql.php:84
+    in D:\wamp\vhost\tedcms\frontend\controllers\SiteController.php:36
+2018-11-08 14:50:44 [127.0.0.1][-][-][profile begin][yii\db\Connection::open] Opening DB connection: mysql:host=127.0.0.1;dbname=tedcms
+    in D:\wamp\vhost\tedcms\common\models\core\ClsMysql.php:84
+    in D:\wamp\vhost\tedcms\frontend\controllers\SiteController.php:36
+2018-11-08 14:50:44 [127.0.0.1][-][-][profile end][yii\db\Connection::open] Opening DB connection: mysql:host=127.0.0.1;dbname=tedcms
+    in D:\wamp\vhost\tedcms\common\models\core\ClsMysql.php:84
+    in D:\wamp\vhost\tedcms\frontend\controllers\SiteController.php:36
+2018-11-08 14:50:44 [127.0.0.1][-][-][profile begin][yii\db\Command::query] select * from `tedcms`.`ted_users`
+    in D:\wamp\vhost\tedcms\common\models\core\ClsMysql.php:84
+    in D:\wamp\vhost\tedcms\frontend\controllers\SiteController.php:36
+2018-11-08 14:50:44 [127.0.0.1][-][-][profile end][yii\db\Command::query] select * from `tedcms`.`ted_users`
+    in D:\wamp\vhost\tedcms\common\models\core\ClsMysql.php:84
+    in D:\wamp\vhost\tedcms\frontend\controllers\SiteController.php:36
+2018-11-08 14:50:44 [127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: D:\wamp\vhost\tedcms\frontend\views\site\index.php
+    in D:\wamp\vhost\tedcms\frontend\controllers\SiteController.php:37
+2018-11-08 14:50:44 [127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: D:\wamp\vhost\tedcms\frontend\views\layouts\main.php
+    in D:\wamp\vhost\tedcms\frontend\controllers\SiteController.php:37
+2018-11-08 14:50:44 [127.0.0.1][-][-][trace][yii\redis\Connection::executeCommand] Executing Redis Command: SET
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:106
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:117
+2018-11-08 14:50:44 [127.0.0.1][-][-][trace][yii\redis\Connection::executeCommand] Executing Redis Command: EXPIRE
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:109
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:117
+2018-11-08 14:50:44 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'br9ot0evbfgrm83kd2k6oqbl08'
+    'TEDCMS' => 'br9ot0evbfgrm83kd2k6oqbl08'
+    '_csrf-frontend' => 'ef2b9e6841aa43d07464c155392dc5f1e7fa0bda2f3205057bf141c81f536903a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"¹Rp‚»¨‹Rºٔ…8�Ó rûìÂʏ¡üŸIê]E\";}'
+]
+
+$_SESSION = [
+    'login_error_times' => 0
+    'admin_name' => 'admin'
+    'action_list' => ''
+    'last_check' => '1541630354'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www.tedcms.li'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.9 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://www.tedcms.li/site/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=br9ot0evbfgrm83kd2k6oqbl08; TEDCMS=br9ot0evbfgrm83kd2k6oqbl08; _csrf-frontend=ef2b9e6841aa43d07464c155392dc5f1e7fa0bda2f3205057bf141c81f536903a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%B9%10Rp%8D%82%BB%A8%8BR%BA%D9%94%858%E1%D3%03+r%FB%EC%C2%CA%8F%A1%FC%9FI%EA%5DE%22%3B%7D'
+    'PATH' => 'D:\\ProgramData\\Python27\\;D:\\ProgramData\\Python27\\Scripts;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Perl64\\site\\bin;C:\\Perl64\\bin;D:\\app\\litid\\product\\11.2.0\\dbhome_1\\bin;C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\redist\\intel64\\compiler;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Windows\\System32\\Wbem;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\NVIDIA Corporation\\PhysX\\Common;D:\\Program Files\\Redis\\;D:\\Go\\bin;C:\\sqlite;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;D:\\ProgramData\\nodejs\\;D:\\Program Files\\VisualSVN Server\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Yarn\\bin\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;D:\\wamp\\bin\\hadoop\\hadoop-2.7.1\\bin;C:\\Program Files\\Java\\jdk1.8.0_161\\bin;D:\\wamp\\bin\\storm\\apache_storm\\bin;D:\\java\\apache-maven-3.5.3\\bin;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\scala\\bin;C:\\Program Files (x86)\\Intel\\Intel(R) Manageme;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\sbt\\bin;C:\\grep\\bin;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Lua\\5.1;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Lua\\5.1\\clibs;C:\\MinGW\\bin;C:\\MinGW\\x86_64-w64-mingw32\\bin;C:\\Vim\\vim80;C:\\Program Files\\R\\R-3.4.3\\bin;C:\\Program Files\\Java\\commons-logging-1.2;C:\\Program Files\\Java\\spring-framework-5.0.5\\libs;C:\\Program Files\\Java\\apache-ant-1.10.3\\bin;D:\\Android\\NDK\\android-ndk-r16b;C:\\ProgramData\\chocolatey\\bin;C:\\MinGW\\curl-7.59.0-win64-mingw\\bin;D:\\HashiCorp\\Vagrant\\bin;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\DTS\\Binn\\;D:\\flutter\\bin;D:\\Android\\SDK\\tools;D:\\Android\\SDK\\platform-tools;D:\\tools\\dart-sdk\\bin;D:\\wamp\\bin\\php\\php7.1.9;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Users\\litid\\.cargo\\bin;C:\\Program Files\\TortoiseSVN\\bin;D:\\Program Files\\TortoiseGit\\bin;D:\\Program Files\\Git\\cmd;C:\\Users\\litid\\AppData\\Roaming\\Python\\Scripts;D:\\Program Files (x86)\\Appium;D:\\Program Files (x86)\\Appium\\node_modules\\.bin;D:\\ProgramData\\nim\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.wlua;.lexe;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Win64) OpenSSL/1.1.0f PHP/7.1.9 Server at www.tedcms.li Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Win64) OpenSSL/1.1.0f PHP/7.1.9'
+    'SERVER_NAME' => 'www.tedcms.li'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/wamp/vhost/tedcms/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp/vhost/tedcms/frontend/web'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'D:/wamp/vhost/tedcms/frontend/web/index.php'
+    'REMOTE_PORT' => '54660'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1541659844.331
+    'REQUEST_TIME' => 1541659844
+]
+2018-11-08 14:50:44 [127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2018-11-08 14:50:44 [127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: gii
+2018-11-08 14:50:44 [127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\gii\Module::bootstrap()
+2018-11-08 14:50:44 [127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => 'gii',
+    'match' => false,
+    'parent' => null,
+]
+2018-11-08 14:50:44 [127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => 'gii/<id:\\w+>',
+    'match' => false,
+    'parent' => null,
+]
+2018-11-08 14:50:44 [127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] [
+    'rule' => 'gii/<controller:[\\w\\-]+>/<action:[\\w\\-]+>',
+    'match' => false,
+    'parent' => null,
+]
+2018-11-08 14:50:44 [127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2018-11-08 14:50:44 [127.0.0.1][-][-][trace][yii\web\Application::handleRequest] Route requested: 'main'
+2018-11-08 14:50:44 [127.0.0.1][-][-][trace][yii\redis\Connection::open] Opening redis DB connection: 127.0.0.1:6379, database=0
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:60
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:36
+    in D:\wamp\vhost\tedcms\frontend\controllers\BaseController.php:22
+2018-11-08 14:50:44 [127.0.0.1][-][-][trace][yii\redis\Connection::executeCommand] Executing Redis Command: AUTH
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:60
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:36
+    in D:\wamp\vhost\tedcms\frontend\controllers\BaseController.php:22
+2018-11-08 14:50:44 [127.0.0.1][-][-][trace][yii\redis\Connection::executeCommand] Executing Redis Command: SELECT
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:60
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:36
+    in D:\wamp\vhost\tedcms\frontend\controllers\BaseController.php:22
+2018-11-08 14:50:44 [127.0.0.1][-][-][trace][yii\redis\Connection::executeCommand] Executing Redis Command: GET
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:60
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:36
+    in D:\wamp\vhost\tedcms\frontend\controllers\BaseController.php:22
+2018-11-08 14:50:44 [127.0.0.1][-][-][trace][yii\base\Controller::runAction] Route to run: main/index
+2018-11-08 14:50:44 [127.0.0.1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: frontend\controllers\MainController::actionIndex()
+2018-11-08 14:50:44 [127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: D:\wamp\vhost\tedcms\frontend\views\main\main.php
+    in D:\wamp\vhost\tedcms\frontend\controllers\MainController.php:12
+2018-11-08 14:50:44 [127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: D:\wamp\vhost\tedcms\frontend\views\layouts\main.php
+    in D:\wamp\vhost\tedcms\frontend\controllers\MainController.php:12
+2018-11-08 14:50:44 [127.0.0.1][-][-][trace][yii\redis\Connection::executeCommand] Executing Redis Command: SET
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:106
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:117
+2018-11-08 14:50:44 [127.0.0.1][-][-][trace][yii\redis\Connection::executeCommand] Executing Redis Command: EXPIRE
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:109
+    in D:\wamp\vhost\tedcms\common\helpers\SessionHelper.php:117
+2018-11-08 14:50:44 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'br9ot0evbfgrm83kd2k6oqbl08'
+    'TEDCMS' => 'br9ot0evbfgrm83kd2k6oqbl08'
+    '_csrf-frontend' => '84292b3800253b1b99c65207498e021fdee15918b46551a69246e5d2c8beabc0a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"‡òÛašÔÁ.VT>OŠҥNÓ̯üÁÌ¸ë°|\";}'
+]
+
+$_SESSION = [
+    'login_error_times' => 0
+    'admin_name' => 'admin'
+    'action_list' => ''
+    'last_check' => '1541630354'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'www.tedcms.li'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.9 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://www.tedcms.li/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=br9ot0evbfgrm83kd2k6oqbl08; TEDCMS=br9ot0evbfgrm83kd2k6oqbl08; _csrf-frontend=84292b3800253b1b99c65207498e021fdee15918b46551a69246e5d2c8beabc0a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%87%F2%7F%DBa%9A%03%1A%D4%05%C1.V%14T%3EO%8A%D2%A5N%D3%CC%AF%FC%C1%CC%04%B8%EB%B0%7C%22%3B%7D'
+    'PATH' => 'D:\\ProgramData\\Python27\\;D:\\ProgramData\\Python27\\Scripts;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Perl64\\site\\bin;C:\\Perl64\\bin;D:\\app\\litid\\product\\11.2.0\\dbhome_1\\bin;C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\redist\\intel64\\compiler;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Windows\\System32\\Wbem;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\NVIDIA Corporation\\PhysX\\Common;D:\\Program Files\\Redis\\;D:\\Go\\bin;C:\\sqlite;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;D:\\ProgramData\\nodejs\\;D:\\Program Files\\VisualSVN Server\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Yarn\\bin\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;D:\\wamp\\bin\\hadoop\\hadoop-2.7.1\\bin;C:\\Program Files\\Java\\jdk1.8.0_161\\bin;D:\\wamp\\bin\\storm\\apache_storm\\bin;D:\\java\\apache-maven-3.5.3\\bin;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\scala\\bin;C:\\Program Files (x86)\\Intel\\Intel(R) Manageme;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\sbt\\bin;C:\\grep\\bin;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Lua\\5.1;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\Lua\\5.1\\clibs;C:\\MinGW\\bin;C:\\MinGW\\x86_64-w64-mingw32\\bin;C:\\Vim\\vim80;C:\\Program Files\\R\\R-3.4.3\\bin;C:\\Program Files\\Java\\commons-logging-1.2;C:\\Program Files\\Java\\spring-framework-5.0.5\\libs;C:\\Program Files\\Java\\apache-ant-1.10.3\\bin;D:\\Android\\NDK\\android-ndk-r16b;C:\\ProgramData\\chocolatey\\bin;C:\\MinGW\\curl-7.59.0-win64-mingw\\bin;D:\\HashiCorp\\Vagrant\\bin;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\DTS\\Binn\\;D:\\flutter\\bin;D:\\Android\\SDK\\tools;D:\\Android\\SDK\\platform-tools;D:\\tools\\dart-sdk\\bin;D:\\wamp\\bin\\php\\php7.1.9;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Users\\litid\\.cargo\\bin;C:\\Program Files\\TortoiseSVN\\bin;D:\\Program Files\\TortoiseGit\\bin;D:\\Program Files\\Git\\cmd;C:\\Users\\litid\\AppData\\Roaming\\Python\\Scripts;D:\\Program Files (x86)\\Appium;D:\\Program Files (x86)\\Appium\\node_modules\\.bin;D:\\ProgramData\\nim\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.wlua;.lexe;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Win64) OpenSSL/1.1.0f PHP/7.1.9 Server at www.tedcms.li Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Win64) OpenSSL/1.1.0f PHP/7.1.9'
+    'SERVER_NAME' => 'www.tedcms.li'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/wamp/vhost/tedcms/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp/vhost/tedcms/frontend/web'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'D:/wamp/vhost/tedcms/frontend/web/index.php'
+    'REMOTE_PORT' => '54664'
+    'REDIRECT_URL' => '/main'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/main'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1541659844.625
+    'REQUEST_TIME' => 1541659844
+]
