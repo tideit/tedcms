@@ -29,7 +29,7 @@ class SiteController extends BaseController
      */
     public function actionIndex()
     {
-    	if($_SESSION['user_id']==0){
+    	if(isset($_SESSION['user_id']) && $_SESSION['user_id'] == 0){
 		    $this->redirect('site/login');
 	    }
 	    $sql = 'select * from '.$GLOBALS['ted']->table('users');

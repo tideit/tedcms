@@ -22,7 +22,8 @@ class AppAsset extends AssetBundle
 		'/static/css/weadmin.css',
 	];
 	public $js = [
-
+		'https://cdn.staticfile.org/html5shiv/r29/html5.min.js',
+		'https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js'
 	];
     public $depends = [
         'yii\web\YiiAsset',

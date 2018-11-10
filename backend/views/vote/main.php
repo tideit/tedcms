@@ -6,8 +6,6 @@
  * Time: 15:50
  */
 ?>
-<link rel="stylesheet" href="../static/css/font.css">
-<link rel="stylesheet" href="../static/css/weadmin.css">
 <script type="text/javascript" src="../lib/layui/layui.js" charset="utf-8"></script>
 <div class="weadmin-body">
 	<blockquote class="layui-elem-quote">投票管理</blockquote>

@@ -39,6 +39,12 @@ $this->title = '';
                 </a>
                 <ul class="sub-menu">
                     <li>
+                        <a _href="./ad/main">
+                            <i class="iconfont">&#xe6a7;</i>
+                            <cite>广告管理</cite>
+                        </a>
+                    </li>
+                    <li>
                         <a _href="./vote/main">
                             <i class="iconfont">&#xe6a7;</i>
                             <cite>投票管理</cite>
