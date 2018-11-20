@@ -34,7 +34,7 @@ $this->title = '';
             <li>
                 <a href="javascript:;">
                     <i class="iconfont">&#xe6b8;</i>
-                    <cite>算牌管理</cite>
+                    <cite>栏目列表</cite>
                     <i class="iconfont nav_right">&#xe697;</i>
                 </a>
                 <ul class="sub-menu">
@@ -42,6 +42,12 @@ $this->title = '';
                         <a _href="./main/results">
                             <i class="iconfont">&#xe6a7;</i>
                             <cite>结果列表</cite>
+                        </a>
+                    </li>
+                    <li>
+                        <a _href="./main/chongzhi">
+                            <i class="iconfont">&#xe6a7;</i>
+                            <cite>会员充值</cite>
                         </a>
                     </li>
                 </ul>

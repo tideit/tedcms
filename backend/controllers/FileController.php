@@ -12,6 +12,15 @@ class FileController extends BaseController
 		return $this->render('class');
 	}
 	public function actionManageControl(){
-		return $this->render('');
+		return $this->render('manage_control');
+	}
+	public function actionManageMain(){
+		return $this->render("manage_main");
+	}
+	public function actionManageView(){
+		return $this->render('manage_view');
+	}
+	public function actionPicView(){
+		return $this->render('pic_view');
 	}
 }
